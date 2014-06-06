@@ -9,12 +9,7 @@ def parse_london_bikes():
     tree = etree.parse('data/bikes/livecyclehireupdates.xml')
     root = tree.getroot()
 
-    client = pymongo.MongoClient()
-    db = client.openmotion
-    bikes = db.bikes
-
-    count = 0
-
+    stations = []
     for s in root:
         station = {}
         station['city'] = 'London'
@@ -36,27 +31,15 @@ def parse_london_bikes():
         loc['coordinates'] = [ float(lng), float(lat) ]
         station['loc'] = loc
 
-        res = bikes.update({'city': station['city'],
-                            'station_id' : station['station_id']},
-                            station,
-                            upsert=True)
+        stations.append(station)
 
-        if res['updatedExisting'] == False:
-            count = count + 1
-
-    client.disconnect()
-    print("London Bikes inserted", count, "new records")
+    return stations
 
 def parse_bcn_bikes():
     tree = etree.parse('data/bikes/bcnbicing.xml')
     root = tree.getroot()
 
-    client = pymongo.MongoClient()
-    db = client.openmotion
-    bikes = db.bikes
-
-    count = 0
-
+    stations = []
     for s in root:
         station = {}
         station['city'] = 'Barcelona'
@@ -87,27 +70,15 @@ def parse_bcn_bikes():
 
         station['name'] = " ".join(it for it in [streetNumber, street] if it)
 
-        res = bikes.update({'city': station['city'],
-                            'station_id' : station['station_id']},
-                            station,
-                            upsert=True)
+        stations.append(station)
 
-        if res['updatedExisting'] == False:
-            count = count + 1
-
-    client.disconnect()
-    print("BCN bikes inserted", count, "new records")
+    return stations
 
 def parse_valencia_bikes():
     json_data = open('data/bikes/Valenbisi.JSON').read()
     data = json.loads(json_data)
 
-    client = pymongo.MongoClient()
-    db = client.openmotion
-    bikes = db.bikes
-
-    count = 0
-
+    stations = []
     for f in data['features']:
         station = {}
         station['city'] = 'Valencia'
@@ -118,27 +89,15 @@ def parse_valencia_bikes():
         station['name'] = " ".join(it for it in [number, address] if it)
         station['loc'] = f['geometry']
 
-        res = bikes.update({'city': station['city'],
-                            'station_id' : station['station_id']},
-                            station,
-                            upsert=True)
+        stations.append(station)
 
-        if res['updatedExisting'] == False:
-            count = count + 1
-
-    client.disconnect()
-    print("Valencia bikes inserted", count, "new records")
+    return stations
 
 def parse_zaragoza_bikes():
     json_data = open('data/bikes/zaragoza.json').read()
     data = json.loads(json_data)
 
-    client = pymongo.MongoClient()
-    db = client.openmotion
-    bikes = db.bikes
-
-    count = 0
-
+    stations = []
     for d in data['response']['docs']:
         station = {}
         station['city'] = 'Zaragoza'
@@ -150,25 +109,12 @@ def parse_zaragoza_bikes():
         loc['coordinates'] = [float(x) for x in d['coordenadas_p'].split(',')]
         station['loc'] = loc
 
-        res = bikes.update({'city': station['city'],
-                            'station_id' : station['station_id']},
-                            station,
-                            upsert=True)
+        stations.append(station)
 
-        if res['updatedExisting'] == False:
-            count = count + 1
-
-    client.disconnect()
-    print("Zaragoza bikes inserted", count, "new records")
+    return stations
 
 def parse_malaga_bikes():
-
-    client = pymongo.MongoClient()
-    db = client.openmotion
-    bikes = db.bikes
-
-    count = 0
-
+    stations = []
     with open('data/bikes/Estacionamientos.csv') as f:
         reader = csv.reader(f, delimiter=',')
         for row in reader:
@@ -185,16 +131,36 @@ def parse_malaga_bikes():
             loc['coordinates'] = [ float(row[10]), float(row[9]) ]
             station['loc'] = loc
 
-            res = bikes.update({'city': station['city'],
-                                'station_id' : station['station_id']},
-                                station,
-                                upsert=True)
+            stations.append(station)
+
+    return stations
+
+def parse_bikes():
+    station_parsers = [
+        ['London', parse_london_bikes],
+        ['Barcelona', parse_bcn_bikes],
+        ['Valencia', parse_valencia_bikes],
+        ['Malaga', parse_malaga_bikes],
+        ['Zaragoza', parse_zaragoza_bikes],
+    ]
+
+    client = pymongo.MongoClient()
+    db = client.openmotion
+    bikes = db.bikes
+
+    for parser in station_parsers:
+        stations = parser[1]()
+        count = 0
+        for s in stations:
+            res = bikes.update({'city': s['city'],
+                                'station_id' : s['station_id']},
+                                s, upsert=True)
 
             if res['updatedExisting'] == False:
                 count = count + 1
+        print(parser[0], "inserted", count, "new records.")
 
     client.disconnect()
-    print("Malaga bikes inserted", count, "new records")
 
 def drop_and_recreate():
     client = pymongo.MongoClient()
@@ -211,8 +177,4 @@ def drop_and_recreate():
 
 if __name__ == "__main__":
     drop_and_recreate()
-    parse_london_bikes()
-    parse_bcn_bikes()
-    parse_valencia_bikes()
-    parse_malaga_bikes()
-    parse_zaragoza_bikes()
+    parse_bikes()
