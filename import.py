@@ -31,17 +31,18 @@ def parse_london_bikes():
             if attr.tag == "long":
                 lng = attr.text
 
-        exists = bikes.find_one({'station_id' : station['station_id']})
-        if exists:
-            continue
-
         loc = {}
         loc['type'] = 'Point'
         loc['coordinates'] = [ float(lng), float(lat) ]
         station['loc'] = loc
 
-        bikes.insert(station)
-        count = count + 1
+        res = bikes.update({'city': station['city'],
+                            'station_id' : station['station_id']},
+                            station,
+                            upsert=True)
+
+        if res['updatedExisting'] == False:
+            count = count + 1
 
     client.disconnect()
     print("London Bikes inserted", count, "new records")
@@ -79,11 +80,6 @@ def parse_bcn_bikes():
             if attr.tag == "long":
                 lng = attr.text
 
-        exists = bikes.find_one({'city': station['city'],
-                                 'station_id' : station['station_id']})
-        if exists:
-            continue
-
         loc = {}
         loc['type'] = 'Point'
         loc['coordinates'] = [ float(lng), float(lat) ]
@@ -91,8 +87,13 @@ def parse_bcn_bikes():
 
         station['name'] = " ".join(it for it in [streetNumber, street] if it)
 
-        bikes.insert(station)
-        count = count + 1
+        res = bikes.update({'city': station['city'],
+                            'station_id' : station['station_id']},
+                            station,
+                            upsert=True)
+
+        if res['updatedExisting'] == False:
+            count = count + 1
 
     client.disconnect()
     print("BCN bikes inserted", count, "new records")
@@ -117,13 +118,13 @@ def parse_valencia_bikes():
         station['name'] = " ".join(it for it in [number, address] if it)
         station['loc'] = f['geometry']
 
-        exists = bikes.find_one({'city': station['city'],
-                                 'station_id' : station['station_id']})
-        if exists:
-            continue
+        res = bikes.update({'city': station['city'],
+                            'station_id' : station['station_id']},
+                            station,
+                            upsert=True)
 
-        bikes.insert(station)
-        count = count + 1
+        if res['updatedExisting'] == False:
+            count = count + 1
 
     client.disconnect()
     print("Valencia bikes inserted", count, "new records")
@@ -149,13 +150,13 @@ def parse_zaragoza_bikes():
         loc['coordinates'] = [float(x) for x in d['coordenadas_p'].split(',')]
         station['loc'] = loc
 
-        exists = bikes.find_one({'city': station['city'],
-                                 'station_id' : station['station_id']})
-        if exists:
-            continue
+        res = bikes.update({'city': station['city'],
+                            'station_id' : station['station_id']},
+                            station,
+                            upsert=True)
 
-        bikes.insert(station)
-        count = count + 1
+        if res['updatedExisting'] == False:
+            count = count + 1
 
     client.disconnect()
     print("Zaragoza bikes inserted", count, "new records")
@@ -184,13 +185,13 @@ def parse_malaga_bikes():
             loc['coordinates'] = [ float(row[10]), float(row[9]) ]
             station['loc'] = loc
 
-            exists = bikes.find_one({'city': station['city'],
-                                     'station_id' : station['station_id']})
-            if exists:
-                continue
+            res = bikes.update({'city': station['city'],
+                                'station_id' : station['station_id']},
+                                station,
+                                upsert=True)
 
-            bikes.insert(station)
-            count = count + 1
+            if res['updatedExisting'] == False:
+                count = count + 1
 
     client.disconnect()
     print("Malaga bikes inserted", count, "new records")
@@ -204,6 +205,8 @@ def drop_and_recreate():
     client = pymongo.MongoClient()
     db = client.openmotion
     db.bikes.ensure_index([('loc', pymongo.GEOSPHERE)])
+    db.bikes.ensure_index([('city', pymongo.ASCENDING),
+                           ('station_id', pymongo.ASCENDING)], unique=True)
     client.disconnect()
 
 if __name__ == "__main__":
