@@ -195,8 +195,19 @@ def parse_malaga_bikes():
     client.disconnect()
     print("Malaga bikes inserted", count, "new records")
 
+def drop_and_recreate():
+    client = pymongo.MongoClient()
+    db = client.openmotion
+    db.drop_collection('bikes')
+    client.disconnect()
+
+    client = pymongo.MongoClient()
+    db = client.openmotion
+    db.bikes.ensure_index([('loc', pymongo.GEOSPHERE)])
+    client.disconnect()
 
 if __name__ == "__main__":
+    drop_and_recreate()
     parse_london_bikes()
     parse_bcn_bikes()
     parse_valencia_bikes()
