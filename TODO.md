@@ -1,4 +1,3 @@
 - script to clean up BCN bike data automatically
 - split schemas out of server.js
 - write docs on how to deploy
-- refactor bike import python mess
