@@ -5,6 +5,34 @@ import pymongo
 from lxml import etree
 from pykml import parser
 
+def parse_london_metro():
+    with open('data/metro/stations.kml', 'rb') as x:
+        xml = etree.parse(x)
+    k = parser.fromstring(etree.tostring(xml))
+    places = (k.findall('.//{http://www.opengis.net/kml/2.2}Placemark'))
+
+    stations = []
+    count = 0
+    for p in places:
+        station = {}
+        station['city'] = 'London'
+        station['name'] = p.name.text.strip()
+
+        coords = [float(c.strip()) for c in p.Point.coordinates.text.split(',')]
+
+        # London inserts a trailing 0 coordinate too? Why!?
+        coords.pop()
+
+        loc = {}
+        loc['type'] = 'Point'
+        loc['coordinates'] = coords
+        station['loc'] = loc
+
+        print(station)
+        stations.append(station)
+
+    return stations
+
 def parse_madrid_metro():
     files = ['data/metro/Metro.kml', 'data/metro/MetroLigero.kml']
     places = []
@@ -89,6 +117,7 @@ def parse_metro():
         ['Madrid', parse_madrid_metro],
         ['Barcelona', parse_bcn_metro],
         ['Bilbao', parse_bilbao_metro],
+        ['London', parse_london_metro],
     ]
     client = pymongo.MongoClient()
     db = client.openmotion
