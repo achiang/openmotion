@@ -6,11 +6,13 @@ from lxml import etree
 from pykml import parser
 
 def parse_madrid_bus():
-    with open('data/bus/EMT.kml', 'rb') as f:
-        xml = etree.parse(f)
-
-    k = parser.fromstring(etree.tostring(xml))
-    places = k.findall('.//{http://www.opengis.net/kml/2.2}Placemark')
+    files = ['data/bus/EMT.kml', 'data/bus/Interurbanos.kml']
+    places = []
+    for f in files:
+        with open(f, 'rb') as x:
+            xml = etree.parse(x)
+        k = parser.fromstring(etree.tostring(xml))
+        places.extend(k.findall('.//{http://www.opengis.net/kml/2.2}Placemark'))
 
     stations = []
     count = 0
