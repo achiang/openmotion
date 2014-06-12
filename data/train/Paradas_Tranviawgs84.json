@@ -1,0 +1,110 @@
+{
+"crs": {
+ 	"type": "EPSG",
+ 	"properties": {"code": 4326}
+},
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "NOMBRE": "MAGO DE OZ", "POSTE": 2501 }, "geometry": { "type": "Point", "coordinates": [ -0.936314669507947, 41.624972726977461 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "GRAN VÍA", "POSTE": 1401 }, "geometry": { "type": "Point", "coordinates": [ -0.887090661053987, 41.646503509017386 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "CANTANDO BAJO LA LLUVIA", "POSTE": 2401 }, "geometry": { "type": "Point", "coordinates": [ -0.930119639266948, 41.623575222246956 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "LOS PÁJAROS", "POSTE": 2301 }, "geometry": { "type": "Point", "coordinates": [ -0.923603383459257, 41.621289245801258 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "PASEO DE LOS OLVIDADOS", "POSTE": 2101 }, "geometry": { "type": "Point", "coordinates": [ -0.9187426630179, 41.622570197297506 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "ARGUALAS", "POSTE": 2001 }, "geometry": { "type": "Point", "coordinates": [ -0.909549890898736, 41.626389449860838 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "CASABLANCA", "POSTE": 1901 }, "geometry": { "type": "Point", "coordinates": [ -0.905533447930818, 41.631354541821537 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "ROMAREDA", "POSTE": 1801 }, "geometry": { "type": "Point", "coordinates": [ -0.900604375334775, 41.63568251874613 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "EMPERADOR CARLOS V", "POSTE": 1701 }, "geometry": { "type": "Point", "coordinates": [ -0.897625197138161, 41.638017983707158 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "PLAZA SAN FRANCISCO", "POSTE": 1601 }, "geometry": { "type": "Point", "coordinates": [ -0.894990960197991, 41.640878802780442 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "FERNANDO EL CATÓLICO - GOYA", "POSTE": 1501 }, "geometry": { "type": "Point", "coordinates": [ -0.892192334104774, 41.643863060670995 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "PLAZA ESPAÑA", "POSTE": 1301 }, "geometry": { "type": "Point", "coordinates": [ -0.881529414304178, 41.651401195364485 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "PLAZA ARAGÓN", "POSTE": 1311 }, "geometry": { "type": "Point", "coordinates": [ -0.885174000541174, 41.647960597915315 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "PLAZA DEL PILAR - MURALLAS", "POSTE": 1101 }, "geometry": { "type": "Point", "coordinates": [ -0.882109893853458, 41.657278956029579 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "CÉSAR AUGUSTO", "POSTE": 1201 }, "geometry": { "type": "Point", "coordinates": [ -0.884006421021145, 41.655195119846873 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "LA CHIMENEA", "POSTE": 1001 }, "geometry": { "type": "Point", "coordinates": [ -0.88278262613614, 41.661177163921408 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "MARTÍNEZ SORIA", "POSTE": 901 }, "geometry": { "type": "Point", "coordinates": [ -0.884578602570436, 41.662508557883712 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "ROSALÍA DE CASTRO", "POSTE": 801 }, "geometry": { "type": "Point", "coordinates": [ -0.887279162103774, 41.666463723400824 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "CLARA CAMPOAMOR", "POSTE": 701 }, "geometry": { "type": "Point", "coordinates": [ -0.890619144153839, 41.669848168335271 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "LEGAZ LACAMBRA", "POSTE": 601 }, "geometry": { "type": "Point", "coordinates": [ -0.890774602216423, 41.674877195549975 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "MARGARITA XIRGU", "POSTE": 501 }, "geometry": { "type": "Point", "coordinates": [ -0.890739776045001, 41.677588227503378 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "CAMPUS RÍO EBRO", "POSTE": 401 }, "geometry": { "type": "Point", "coordinates": [ -0.889729698384053, 41.68347243406874 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "JUSLIBOL", "POSTE": 301 }, "geometry": { "type": "Point", "coordinates": [ -0.884563266059351, 41.68691316351147 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "PARQUE GOYA", "POSTE": 201 }, "geometry": { "type": "Point", "coordinates": [ -0.878639532779436, 41.686851530634137 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "AVENIDA DE LA ACADEMIA", "POSTE": 101 }, "geometry": { "type": "Point", "coordinates": [ -0.870739883612561, 41.68721997912688 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "MAGO DE OZ", "POSTE": 2502 }, "geometry": { "type": "Point", "coordinates": [ -0.936385005710577, 41.624377889909439 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "GRAN VÍA", "POSTE": 1402 }, "geometry": { "type": "Point", "coordinates": [ -0.887051457219986, 41.64644388066538 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "UN AMERICANO EN PARÍS", "POSTE": 2422 }, "geometry": { "type": "Point", "coordinates": [ -0.930425226085061, 41.623030463941177 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "LA VENTANA INDISCRETA", "POSTE": 2322 }, "geometry": { "type": "Point", "coordinates": [ -0.924037664534098, 41.620877113594837 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "PASEO DE LOS OLVIDADOS", "POSTE": 2102 }, "geometry": { "type": "Point", "coordinates": [ -0.918661750861713, 41.622489087951031 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "ARGUALAS", "POSTE": 2002 }, "geometry": { "type": "Point", "coordinates": [ -0.909492817583685, 41.626369355225556 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "CASABLANCA", "POSTE": 1902 }, "geometry": { "type": "Point", "coordinates": [ -0.90550451090181, 41.631341254743184 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "ROMAREDA", "POSTE": 1802 }, "geometry": { "type": "Point", "coordinates": [ -0.900542136300455, 41.635635085363539 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "EMPERADOR CARLOS V", "POSTE": 1702 }, "geometry": { "type": "Point", "coordinates": [ -0.897544763356805, 41.637976788155697 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "PLAZA SAN FRANCISCO", "POSTE": 1602 }, "geometry": { "type": "Point", "coordinates": [ -0.894886969894626, 41.640824538194288 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "FERNANDO EL CATÓLICO - GOYA", "POSTE": 1502 }, "geometry": { "type": "Point", "coordinates": [ -0.892109659612001, 41.643821134732484 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "PLAZA ARAGÓN", "POSTE": 1312 }, "geometry": { "type": "Point", "coordinates": [ -0.885098788970353, 41.647916761705169 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "PLAZA ESPAÑA", "POSTE": 1302 }, "geometry": { "type": "Point", "coordinates": [ -0.881456877788677, 41.651359577376823 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "CÉSAR AUGUSTO", "POSTE": 1202 }, "geometry": { "type": "Point", "coordinates": [ -0.883814608868203, 41.655124060145845 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "PLAZA DEL PILAR - MURALLAS", "POSTE": 1102 }, "geometry": { "type": "Point", "coordinates": [ -0.882008328602632, 41.657233807952096 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "LA CHIMENEA", "POSTE": 1002 }, "geometry": { "type": "Point", "coordinates": [ -0.882774394833229, 41.661273286966171 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "MARÍA MONTESSORI", "POSTE": 902 }, "geometry": { "type": "Point", "coordinates": [ -0.883541132789341, 41.663097334246608 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "LEÓN FELIPE", "POSTE": 802 }, "geometry": { "type": "Point", "coordinates": [ -0.886580028673715, 41.667382830746668 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "PABLO NERUDA", "POSTE": 702 }, "geometry": { "type": "Point", "coordinates": [ -0.888777611412459, 41.66963307479093 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "ADOLFO AZNAR", "POSTE": 602 }, "geometry": { "type": "Point", "coordinates": [ -0.889194940652865, 41.674864660932698 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "GARCÍA ABRIL", "POSTE": 502 }, "geometry": { "type": "Point", "coordinates": [ -0.889166377264221, 41.677456793939108 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "CAMPUS RÍO EBRO", "POSTE": 402 }, "geometry": { "type": "Point", "coordinates": [ -0.889614851280569, 41.683473986249041 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "JUSLIBOL", "POSTE": 302 }, "geometry": { "type": "Point", "coordinates": [ -0.884561562203294, 41.686816090754064 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "PARQUE GOYA", "POSTE": 202 }, "geometry": { "type": "Point", "coordinates": [ -0.878645673476957, 41.686734241204469 ] } }
+,
+{ "type": "Feature", "properties": { "NOMBRE": "AVENIDA DE LA ACADEMIA", "POSTE": 102 }, "geometry": { "type": "Point", "coordinates": [ -0.870714334059104, 41.687219035788999 ] } }
+
+]
+}
