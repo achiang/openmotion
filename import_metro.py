@@ -77,7 +77,7 @@ def parse_bilbao_metro():
 
             loc = {}
             loc['type'] = 'Point'
-            loc['coordinates'] = [ float(row[5]), float(row[3]) ]
+            loc['coordinates'] = [ float(row[4]), float(row[3]) ]
             station['loc'] = loc
 
             stations.append(station)
