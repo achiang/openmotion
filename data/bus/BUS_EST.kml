@@ -1,0 +1,1663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>TRANSPORT</name>
+<open>1</open>
+<Style id="Style1">
+<IconStyle>
+<color>ff008000</color>
+<scale>0.208332346653543</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+</Icon>
+</IconStyle>
+</Style>
+<Schema name="" id="Schema1">
+<SimpleField type="xsd:int" name="ID">
+</SimpleField>
+<SimpleField type="xsd:string" name="NOM_ESTACIO">
+</SimpleField>
+<SimpleField type="xsd:string" name="ESTAT">
+</SimpleField>
+<SimpleField type="xsd:string" name="CORRESPONDENCIA">
+</SimpleField>
+<SimpleField type="xsd:string" name="MODALITAT">
+</SimpleField>
+<SimpleField type="xsd:string" name="BICEBERG">
+</SimpleField>
+<SimpleField type="xsd:string" name="MUNICIPI">
+</SimpleField>
+<SimpleField type="xsd:string" name="COMARCA">
+</SimpleField>
+<SimpleField type="xsd:string" name="PROVINCIA">
+</SimpleField>
+<SimpleField type="xsd:string" name="DIRECCIO">
+</SimpleField>
+<SimpleField type="xsd:string" name="TELEFON_ESTACIO">
+</SimpleField>
+<SimpleField type="xsd:string" name="CONCESSIONARI">
+</SimpleField>
+<SimpleField type="xsd:string" name="TELEFON_CONCESSIONARI">
+</SimpleField>
+<SimpleField type="xsd:string" name="CODI_POSTAL">
+</SimpleField>
+<SimpleField type="xsd:string" name="WEB">
+</SimpleField>
+</Schema>
+<Folder>
+<name>TRANSPORT.BUS_EST</name>
+<Placemark>
+<name>Sant Carles de la Ràpita</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">48</SimpleData>
+<SimpleData name="NOM_ESTACIO">Sant Carles de la Ràpita</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Sant Carles de la Ràpita</SimpleData>
+<SimpleData name="COMARCA">Montsià</SimpleData>
+<SimpleData name="PROVINCIA">Tarragona</SimpleData>
+<SimpleData name="DIRECCIO">Doctor Torné s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI"></SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL">43540</SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>0.588389069139772,40.6245864028847,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Amposta</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">63</SimpleData>
+<SimpleData name="NOM_ESTACIO">Amposta</SimpleData>
+<SimpleData name="ESTAT">Projecte</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Amposta</SimpleData>
+<SimpleData name="COMARCA">Montsià</SimpleData>
+<SimpleData name="PROVINCIA">Tarragona</SimpleData>
+<SimpleData name="DIRECCIO">Av. de Santa Bàrbara, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">977 70 62 24</SimpleData>
+<SimpleData name="CONCESSIONARI"></SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL">43870</SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>0.579251068671543,40.7120694371495,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Tortosa</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">45</SimpleData>
+<SimpleData name="NOM_ESTACIO">Tortosa</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG">Servei</SimpleData>
+<SimpleData name="MUNICIPI">Tortosa</SimpleData>
+<SimpleData name="COMARCA">Baix Ebre</SimpleData>
+<SimpleData name="PROVINCIA">Tarragona</SimpleData>
+<SimpleData name="DIRECCIO">Adrià d&apos;Utrech, 1</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">977 44 03 00</SimpleData>
+<SimpleData name="CONCESSIONARI">La Hispano de Fuente En Segures, SA (HIFE)</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">902 11 98 14</SimpleData>
+<SimpleData name="CODI_POSTAL">43500</SimpleData>
+<SimpleData name="WEB">www.hife.es</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>0.521617815707494,40.8046003820519,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>L&apos;Aldea</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">46</SimpleData>
+<SimpleData name="NOM_ESTACIO">L&apos;Aldea</SimpleData>
+<SimpleData name="ESTAT">Projecte</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">L&apos;Aldea</SimpleData>
+<SimpleData name="COMARCA">Baix Ebre</SimpleData>
+<SimpleData name="PROVINCIA">Tarragona</SimpleData>
+<SimpleData name="DIRECCIO"></SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI"></SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL"></SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>0.600203745603134,40.7550502550418,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>El Pont de Suert</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">1</SimpleData>
+<SimpleData name="NOM_ESTACIO">El Pont de Suert</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">El Pont de Suert</SimpleData>
+<SimpleData name="COMARCA">Alta Ribagorça</SimpleData>
+<SimpleData name="PROVINCIA">Lleida</SimpleData>
+<SimpleData name="DIRECCIO">Av. Victoriano Muñoz, 8</SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament del Pont de Suert</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">973 69 00 05</SimpleData>
+<SimpleData name="CODI_POSTAL">25520</SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>0.742588335183851,42.4080049239511,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Cambrils</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">44</SimpleData>
+<SimpleData name="NOM_ESTACIO">Cambrils</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA">R16</SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Cambrils</SimpleData>
+<SimpleData name="COMARCA">Baix Camp</SimpleData>
+<SimpleData name="PROVINCIA">Tarragona</SimpleData>
+<SimpleData name="DIRECCIO">Av. de la Llosa, 1</SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Cambrils</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">977 79 45 79</SimpleData>
+<SimpleData name="CODI_POSTAL">43850</SimpleData>
+<SimpleData name="WEB">www.cambrils.org</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.0552151594389,41.0690897084904,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Móra d&apos;Ebre</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">42</SimpleData>
+<SimpleData name="NOM_ESTACIO">Móra d&apos;Ebre</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Móra d&apos;Ebre</SimpleData>
+<SimpleData name="COMARCA">Ribera d&apos;Ebre</SimpleData>
+<SimpleData name="PROVINCIA">Tarragona</SimpleData>
+<SimpleData name="DIRECCIO">Camí de les Hortes,s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">977 40 12 91</SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Móra d&apos;Ebre</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">977 40 00 12</SimpleData>
+<SimpleData name="CODI_POSTAL">43740</SimpleData>
+<SimpleData name="WEB">www.moradebre.cat</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>0.64451607278318,41.0886686047433,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Falset</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">41</SimpleData>
+<SimpleData name="NOM_ESTACIO">Falset</SimpleData>
+<SimpleData name="ESTAT">Projecte</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Falset</SimpleData>
+<SimpleData name="COMARCA">Priorat</SimpleData>
+<SimpleData name="PROVINCIA">Tarragona</SimpleData>
+<SimpleData name="DIRECCIO"></SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI"></SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL"></SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>0.823599707158151,41.142007711433,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Reus</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">40</SimpleData>
+<SimpleData name="NOM_ESTACIO">Reus</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Reus</SimpleData>
+<SimpleData name="COMARCA">Baix Camp</SimpleData>
+<SimpleData name="PROVINCIA">Tarragona</SimpleData>
+<SimpleData name="DIRECCIO">Ctra. de Salou, 2-24</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">977 77 06 98</SimpleData>
+<SimpleData name="CONCESSIONARI">La Hispano Igualadina, SA</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">902 29 29 00</SimpleData>
+<SimpleData name="CODI_POSTAL">43204</SimpleData>
+<SimpleData name="WEB">www.igualadina.com</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.11176059368817,41.147601428221,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Les Borges Blanques</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">33</SimpleData>
+<SimpleData name="NOM_ESTACIO">Les Borges Blanques</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Les Borges Blanques</SimpleData>
+<SimpleData name="COMARCA">Garrigues</SimpleData>
+<SimpleData name="PROVINCIA">Lleida</SimpleData>
+<SimpleData name="DIRECCIO">Pl. d&apos;Europa, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">973 14 28 50</SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de les Borges Blanques</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL">25400</SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>0.870205141563157,41.5183057006778,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Tarragona</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">39</SimpleData>
+<SimpleData name="NOM_ESTACIO">Tarragona</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Tarragona</SimpleData>
+<SimpleData name="COMARCA">Tarragonès</SimpleData>
+<SimpleData name="PROVINCIA">Tarragona</SimpleData>
+<SimpleData name="DIRECCIO">Pl. Imperial Tarraco, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">977 22 91 26</SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Tarragona</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">977 29 61 00</SimpleData>
+<SimpleData name="CODI_POSTAL">43005</SimpleData>
+<SimpleData name="WEB">www.tarragona.cat</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.24426984107437,41.1182979660574,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Valls</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">35</SimpleData>
+<SimpleData name="NOM_ESTACIO">Valls</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG">Servei</SimpleData>
+<SimpleData name="MUNICIPI">Valls</SimpleData>
+<SimpleData name="COMARCA">Alt Camp</SimpleData>
+<SimpleData name="PROVINCIA">Tarragona</SimpleData>
+<SimpleData name="DIRECCIO">Anselm Clavé, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">977 60 65 96</SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Valls</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">977 63 60 10</SimpleData>
+<SimpleData name="CODI_POSTAL">43800</SimpleData>
+<SimpleData name="WEB">www.valls.cat</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.25364989185865,41.285996756184,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Montblanc</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">34</SimpleData>
+<SimpleData name="NOM_ESTACIO">Montblanc</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Montblanc</SimpleData>
+<SimpleData name="COMARCA">Conca de Barberà</SimpleData>
+<SimpleData name="PROVINCIA">Tarragona</SimpleData>
+<SimpleData name="DIRECCIO">Muralla de Santa Tecla</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">977 21 44 75</SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Montblanc</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">977 86 00 09</SimpleData>
+<SimpleData name="CODI_POSTAL">43400</SimpleData>
+<SimpleData name="WEB">www.montblanc.cat</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.1634140431478,41.3777119073752,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>El Vendrell</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">38</SimpleData>
+<SimpleData name="NOM_ESTACIO">El Vendrell</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">El Vendrell</SimpleData>
+<SimpleData name="COMARCA">Baix Penedès</SimpleData>
+<SimpleData name="PROVINCIA">Tarragona</SimpleData>
+<SimpleData name="DIRECCIO">Av. Jaume Carner, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament del Vendrell</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL">43700</SimpleData>
+<SimpleData name="WEB">www.elvendrell.net</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.53635031541018,41.218420688543,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Vilanova i la Geltrú</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">37</SimpleData>
+<SimpleData name="NOM_ESTACIO">Vilanova i la Geltrú</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA">R.2S-R13-R14-R15-R16</SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Vilanova i la Geltrú</SimpleData>
+<SimpleData name="COMARCA">Garraf</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO">Pl. d&apos;Eduard Maristany, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Vilanova i la Geltrú</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">93 893 70 60 / 93 814 58 48</SimpleData>
+<SimpleData name="CODI_POSTAL">08800</SimpleData>
+<SimpleData name="WEB">wwwmontbus.cat / www.autocarsplana.com</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.73066009764923,41.2206630568043,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Vilafranca del Penedès</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">36</SimpleData>
+<SimpleData name="NOM_ESTACIO">Vilafranca del Penedès</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG">Servei</SimpleData>
+<SimpleData name="MUNICIPI">Vilafranca del Penedès</SimpleData>
+<SimpleData name="COMARCA">Alt Penedès</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO">Ctra. de Vilanova i la Geltrú, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">938 90 11 51</SimpleData>
+<SimpleData name="CONCESSIONARI">La Hispano Iguadalina, SA</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">902 29 29 00</SimpleData>
+<SimpleData name="CODI_POSTAL">08270</SimpleData>
+<SimpleData name="WEB">www.igualadina.com</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.70172817983519,41.3417554528743,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Lleida</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">58</SimpleData>
+<SimpleData name="NOM_ESTACIO">Lleida</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Lleida</SimpleData>
+<SimpleData name="COMARCA">Segrià</SimpleData>
+<SimpleData name="PROVINCIA">Lleida</SimpleData>
+<SimpleData name="DIRECCIO">Saracíbar, 2</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">973 26 85 00</SimpleData>
+<SimpleData name="CONCESSIONARI">EDAL, SA</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL">25002</SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>0.623184871803727,41.6117245027678,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Mollerussa</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">32</SimpleData>
+<SimpleData name="NOM_ESTACIO">Mollerussa</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Mollerussa</SimpleData>
+<SimpleData name="COMARCA">Plà D&apos;Urgell</SimpleData>
+<SimpleData name="PROVINCIA">Lleida</SimpleData>
+<SimpleData name="DIRECCIO">C. de la Foresta d&apos;Urgell</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">973 60 07 13</SimpleData>
+<SimpleData name="CONCESSIONARI">Auto Transporte Parellada, SL</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">973 27 55 99</SimpleData>
+<SimpleData name="CODI_POSTAL">25230</SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>0.891353414867544,41.6262605946702,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Balaguer</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">28</SimpleData>
+<SimpleData name="NOM_ESTACIO">Balaguer</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Balaguer</SimpleData>
+<SimpleData name="COMARCA">Noguera</SimpleData>
+<SimpleData name="PROVINCIA">Lleida</SimpleData>
+<SimpleData name="DIRECCIO">Pl. dels Països Catalans, 1-3</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">973 44 54 76</SimpleData>
+<SimpleData name="CONCESSIONARI">SA Alsina Graells de Auto Transportes</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">902 42 22 42</SimpleData>
+<SimpleData name="CODI_POSTAL">25600</SimpleData>
+<SimpleData name="WEB">www.alsa.es</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>0.807706721602073,41.7880111156141,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Tremp</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">4</SimpleData>
+<SimpleData name="NOM_ESTACIO">Tremp</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA">LLEIDA-LA POBLA</SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Tremp</SimpleData>
+<SimpleData name="COMARCA">Pallars Llussà</SimpleData>
+<SimpleData name="PROVINCIA">Lleida</SimpleData>
+<SimpleData name="DIRECCIO">Montllobà, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Tremp</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">902 42 22 42</SimpleData>
+<SimpleData name="CODI_POSTAL">25620</SimpleData>
+<SimpleData name="WEB">www.alsa.es</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>0.891769083811422,42.167655939298,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>La Pobla de Segur</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">61</SimpleData>
+<SimpleData name="NOM_ESTACIO">La Pobla de Segur</SimpleData>
+<SimpleData name="ESTAT">Projecte</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">La Pobla de Segur</SimpleData>
+<SimpleData name="COMARCA">Pallars Llussà</SimpleData>
+<SimpleData name="PROVINCIA">Lleida</SimpleData>
+<SimpleData name="DIRECCIO"></SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI"></SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL"></SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>0.965220629449873,42.2406214154987,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>La Pobla de Segur</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">3</SimpleData>
+<SimpleData name="NOM_ESTACIO">La Pobla de Segur</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">La Pobla de Segur</SimpleData>
+<SimpleData name="COMARCA">Pallars Llussà</SimpleData>
+<SimpleData name="PROVINCIA">Lleida</SimpleData>
+<SimpleData name="DIRECCIO">La Font, 8</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">973 68 00 38</SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de la Pobla de Segur</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL">25500</SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>0.967461310514291,42.2465579349344,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Tàrrega</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">31</SimpleData>
+<SimpleData name="NOM_ESTACIO">Tàrrega</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Tàrrega</SimpleData>
+<SimpleData name="COMARCA">Urgell</SimpleData>
+<SimpleData name="PROVINCIA">Lleida</SimpleData>
+<SimpleData name="DIRECCIO">Migdia, 4</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">973 31 11 71</SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Tàrrega</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">973 31 16 08</SimpleData>
+<SimpleData name="CODI_POSTAL">25300</SimpleData>
+<SimpleData name="WEB">www.ajtarrega.es</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.14156235595969,41.6459056287075,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Cervera</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">29</SimpleData>
+<SimpleData name="NOM_ESTACIO">Cervera</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA">R12</SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Cervera</SimpleData>
+<SimpleData name="COMARCA">Segarra</SimpleData>
+<SimpleData name="PROVINCIA">Lleida</SimpleData>
+<SimpleData name="DIRECCIO">Vidal de Montpalau, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">973 53 3184</SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Cervera</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">973 53 00 25</SimpleData>
+<SimpleData name="CODI_POSTAL">25200</SimpleData>
+<SimpleData name="WEB">www.cerverapaeria.cat</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.27394772439325,41.673757192913,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Igualada</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">30</SimpleData>
+<SimpleData name="NOM_ESTACIO">Igualada</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA">R6</SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Igualada</SimpleData>
+<SimpleData name="COMARCA">Anoia</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO">Pg. Verdaguer, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">938 04 44 51</SimpleData>
+<SimpleData name="CONCESSIONARI">La Hispano Igualadina, SA</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">902 29 29 00</SimpleData>
+<SimpleData name="CODI_POSTAL">08700</SimpleData>
+<SimpleData name="WEB">www.igualadina.com</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.63141338292631,41.5774523065158,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Manresa</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">27</SimpleData>
+<SimpleData name="NOM_ESTACIO">Manresa</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA">R5</SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Manresa</SimpleData>
+<SimpleData name="COMARCA">Bages</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO">Sant Antoni Maria Claret, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">938 74 66 66</SimpleData>
+<SimpleData name="CONCESSIONARI">Transports Castellà, SA</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">938 74 68 00</SimpleData>
+<SimpleData name="CODI_POSTAL">08240</SimpleData>
+<SimpleData name="WEB">www.castellabus.com</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.833098254152,41.7315970858729,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Súria</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">26</SimpleData>
+<SimpleData name="NOM_ESTACIO">Súria</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Súria</SimpleData>
+<SimpleData name="COMARCA">Bages</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO">Pl. de Sant Joan, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">938 68 23 16</SimpleData>
+<SimpleData name="CONCESSIONARI">Sr. José González Sánchez</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL">08260</SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.75036974092268,41.8324186750486,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Sort</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">2</SimpleData>
+<SimpleData name="NOM_ESTACIO">Sort</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Sort</SimpleData>
+<SimpleData name="COMARCA">Pallars Sobirà</SimpleData>
+<SimpleData name="PROVINCIA">Lleida</SimpleData>
+<SimpleData name="DIRECCIO">Pl. Caterina Albert, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Sort</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">973 68 03 36</SimpleData>
+<SimpleData name="CODI_POSTAL">25560</SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.1318752834236,42.4119496567194,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>La Seu d&apos; Urgell</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">5</SimpleData>
+<SimpleData name="NOM_ESTACIO">La Seu d&apos; Urgell</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Puigcerdà</SimpleData>
+<SimpleData name="COMARCA">Alt Urgell</SimpleData>
+<SimpleData name="PROVINCIA">Lleida</SimpleData>
+<SimpleData name="DIRECCIO">Bisbe Bell-Lloch, 1</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">973 35 00 20</SimpleData>
+<SimpleData name="CONCESSIONARI">SA Alsina Graells de Auto Transportes</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">902 42 22 42</SimpleData>
+<SimpleData name="CODI_POSTAL">25700</SimpleData>
+<SimpleData name="WEB">www.alsa.es</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.45977024025166,42.3594806678097,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Solsona</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">24</SimpleData>
+<SimpleData name="NOM_ESTACIO">Solsona</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Solsona</SimpleData>
+<SimpleData name="COMARCA">Solsonès</SimpleData>
+<SimpleData name="PROVINCIA">Lleida</SimpleData>
+<SimpleData name="DIRECCIO">Ctra. de Bassella, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">973 48 15 71</SimpleData>
+<SimpleData name="CONCESSIONARI">Sr. Juan Tordesilla Casals</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL">25280</SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.51585249426902,41.9963428391991,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Quatre Camins</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">57</SimpleData>
+<SimpleData name="NOM_ESTACIO">Quatre Camins</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA">S4-S8-R5-R6</SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">St.Vicenç dels Horts</SimpleData>
+<SimpleData name="COMARCA">Barcelonès</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO">N-340 enllaç BV-2002</SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI">FGC</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">932 05 15 15</SimpleData>
+<SimpleData name="CODI_POSTAL">08620</SimpleData>
+<SimpleData name="WEB">www.fgc.cat</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.00177830142566,41.4068121982088,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Z.Universitària</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">56</SimpleData>
+<SimpleData name="NOM_ESTACIO">Z.Universitària</SimpleData>
+<SimpleData name="ESTAT">Estudi</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Barcelona</SimpleData>
+<SimpleData name="COMARCA">Barcelonès</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO"></SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI"></SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL"></SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.11188219956461,41.384892372361,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Barcelona Sants</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">55</SimpleData>
+<SimpleData name="NOM_ESTACIO">Barcelona Sants</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L3-L5-R.1-R2-R.2N-R.2S-R3-R4-R7-R11-R12-R13-R14-R15-R16</SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Barcelona</SimpleData>
+<SimpleData name="COMARCA">Barcelonès</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO">Viriat, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI"></SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL">08014</SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.13933264701527,41.3799388136851,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Barcelona Nord</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">54</SimpleData>
+<SimpleData name="NOM_ESTACIO">Barcelona Nord</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L1-R.1-R3-R4-R7</SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Barcelona</SimpleData>
+<SimpleData name="COMARCA">Barcelonès</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO">Alí Bei, 80</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">902 26 06 06</SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Barcelona</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL">08013</SimpleData>
+<SimpleData name="WEB">www.barcelonanord.cat</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.18229666305931,41.3935939350085,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>UAB</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">62</SimpleData>
+<SimpleData name="NOM_ESTACIO">UAB</SimpleData>
+<SimpleData name="ESTAT">Projecte</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Cerdanyola del Vallès</SimpleData>
+<SimpleData name="COMARCA">Vallès Occidental</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO"></SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI"></SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL"></SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.11083003804521,41.4980923444931,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Barcelona Sant Andreu</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">53</SimpleData>
+<SimpleData name="NOM_ESTACIO">Barcelona Sant Andreu</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L1-R3-R4-R7</SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Barcelona</SimpleData>
+<SimpleData name="COMARCA">Barcelonès</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO">Meridiana, 416</SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI"></SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL">08030</SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.18294699989867,41.4315955882231,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Gandesa</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">43</SimpleData>
+<SimpleData name="NOM_ESTACIO">Gandesa</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Gandesa</SimpleData>
+<SimpleData name="COMARCA">Terra Alta</SimpleData>
+<SimpleData name="PROVINCIA">Tarragona</SimpleData>
+<SimpleData name="DIRECCIO">Av. Catalunya, 41</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">977 42 15 11</SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Gandesa</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">977 42 00 07</SimpleData>
+<SimpleData name="CODI_POSTAL">43780</SimpleData>
+<SimpleData name="WEB">www.gandesa.altanet.org</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>0.440654493667095,41.0555054907369,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Terrassa</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">52</SimpleData>
+<SimpleData name="NOM_ESTACIO">Terrassa</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Terrassa</SimpleData>
+<SimpleData name="COMARCA">Vallès Occidental</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO">Ctra. de Montcada, 2</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">937 33 11 12</SimpleData>
+<SimpleData name="CONCESSIONARI">Martí i Renom, SA (SARBUS)</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">937 27 92 92</SimpleData>
+<SimpleData name="CODI_POSTAL">08223</SimpleData>
+<SimpleData name="WEB">www.sarbus.com</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.0080433994275,41.5566973529529,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Sabadell</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">51</SimpleData>
+<SimpleData name="NOM_ESTACIO">Sabadell</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA">R4-R12</SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Sabadell</SimpleData>
+<SimpleData name="COMARCA">Vallès Occidental</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO">Estació, 67</SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Sabadell</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">937 27 92 92</SimpleData>
+<SimpleData name="CODI_POSTAL">08202</SimpleData>
+<SimpleData name="WEB">www.sarbus.com</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.11526163424985,41.5470778894993,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Caldes de Montbui</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">49</SimpleData>
+<SimpleData name="NOM_ESTACIO">Caldes de Montbui</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Caldes de Montbui</SimpleData>
+<SimpleData name="COMARCA">Vallès Oriental</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO">Av. Pi i Margall, 104</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">938 65 04 00</SimpleData>
+<SimpleData name="CONCESSIONARI">Empresa Sagalés, SA</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL">08140</SimpleData>
+<SimpleData name="WEB">www.sagales.com</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.16586821273544,41.6293084753605,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Navàs</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">25</SimpleData>
+<SimpleData name="NOM_ESTACIO">Navàs</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Navàs</SimpleData>
+<SimpleData name="COMARCA">Bages</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO">Plaça Estació, 4</SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Navàs</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">938 21 02 59 (Berga)</SimpleData>
+<SimpleData name="CODI_POSTAL">08670</SimpleData>
+<SimpleData name="WEB">www.alsa.es</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.87868648049983,41.902041757031,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Granollers</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">50</SimpleData>
+<SimpleData name="NOM_ESTACIO">Granollers</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Granollers</SimpleData>
+<SimpleData name="COMARCA">Vallès Oriental</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO">Av. del Parc Josep Umbert, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">938 70 78 60</SimpleData>
+<SimpleData name="CONCESSIONARI">Transports Municipals de Granollers (TG)</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL">08400</SimpleData>
+<SimpleData name="WEB">www.busgranollers.cat</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.29097382636149,41.6065388960957,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Vic</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">22</SimpleData>
+<SimpleData name="NOM_ESTACIO">Vic</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA">R3</SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Vic</SimpleData>
+<SimpleData name="COMARCA">Osona</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO">Pare Gallissà, 4</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">938 89 19 17</SimpleData>
+<SimpleData name="CONCESSIONARI">Empresa Sagalés, SA</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL">08500</SimpleData>
+<SimpleData name="WEB">www.sagales.com</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.2493107208027,41.9326173245329,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Berga</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">23</SimpleData>
+<SimpleData name="NOM_ESTACIO">Berga</SimpleData>
+<SimpleData name="ESTAT">Projecte</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Berga</SimpleData>
+<SimpleData name="COMARCA">Berguedà</SimpleData>
+<SimpleData name="PROVINCIA">Barcelona</SimpleData>
+<SimpleData name="DIRECCIO"></SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI"></SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL"></SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>1.84501019175542,42.0996374629053,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Ripoll</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">7</SimpleData>
+<SimpleData name="NOM_ESTACIO">Ripoll</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA">R3</SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Ripoll</SimpleData>
+<SimpleData name="COMARCA">Ripollès</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO">Progrés, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">972 71 41 42</SimpleData>
+<SimpleData name="CONCESSIONARI">Transports Mir, SA</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">972 70 30 12</SimpleData>
+<SimpleData name="CODI_POSTAL">17500</SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.19525417309827,42.1970015982048,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Olot</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">13</SimpleData>
+<SimpleData name="NOM_ESTACIO">Olot</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Olot</SimpleData>
+<SimpleData name="COMARCA">Garrotxa</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO">Bisbe Lorenzana, 18</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">972 26 01 96</SimpleData>
+<SimpleData name="CONCESSIONARI">Transportes Eléctricos Interurbanos, SA (TEISA)</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">972 20 48 68</SimpleData>
+<SimpleData name="CODI_POSTAL">17800</SimpleData>
+<SimpleData name="WEB">www.teisa-bus.com</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.49147332999147,42.1809369206504,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Camprodon</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">6</SimpleData>
+<SimpleData name="NOM_ESTACIO">Camprodon</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Camprodon</SimpleData>
+<SimpleData name="COMARCA">Ripollès</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO">Camí Camps de la Vila, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">972 74 71 81</SimpleData>
+<SimpleData name="CONCESSIONARI">Transportes Eléctricos Interurbanos, SA (TEISA)</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">972 20 48 68</SimpleData>
+<SimpleData name="CODI_POSTAL">17867</SimpleData>
+<SimpleData name="WEB">www.teisa-bus.com</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.36534565223324,42.3097685867968,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Blanes</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">19</SimpleData>
+<SimpleData name="NOM_ESTACIO">Blanes</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG">Servei</SimpleData>
+<SimpleData name="MUNICIPI">Blanes</SimpleData>
+<SimpleData name="COMARCA">Selva</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO">Lluís Companys, 32</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">972 33 78 42</SimpleData>
+<SimpleData name="CONCESSIONARI">Transports Pujol i Pujol, SL</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">972 36 42 36</SimpleData>
+<SimpleData name="CODI_POSTAL">17300</SimpleData>
+<SimpleData name="WEB">www.transpujol.com</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.78061912766435,41.6684085609191,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Lloret de Mar</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">18</SimpleData>
+<SimpleData name="NOM_ESTACIO">Lloret de Mar</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Lloret de Mar</SimpleData>
+<SimpleData name="COMARCA">Selva</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO">Av. Vila de Blanes, 45</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">972 36 27 74</SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Lloret de Mar</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">972 37 29 43</SimpleData>
+<SimpleData name="CODI_POSTAL">17310</SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.84417732936198,41.7021767949753,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Santa Coloma de Farners</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">21</SimpleData>
+<SimpleData name="NOM_ESTACIO">Santa Coloma de Farners</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">St. Coloma de Farner</SimpleData>
+<SimpleData name="COMARCA">Selva</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO">Ctra. d&apos;Anglès, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">972 84 08 06</SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Santa Coloma de Farners</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">972 84 09 77</SimpleData>
+<SimpleData name="CODI_POSTAL">17430</SimpleData>
+<SimpleData name="WEB">www.scf.cat</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.66751580078371,41.8614460003293,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Girona</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">20</SimpleData>
+<SimpleData name="NOM_ESTACIO">Girona</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA">R11</SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Girona</SimpleData>
+<SimpleData name="COMARCA">Gironès</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO">Pl. d&apos;Espanya, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">972 21 23 19</SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Girona</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">972 41 90 00</SimpleData>
+<SimpleData name="CODI_POSTAL">17005</SimpleData>
+<SimpleData name="WEB">www.girona.cat</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.81733564708678,41.978992023406,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Tossa de Mar</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">17</SimpleData>
+<SimpleData name="NOM_ESTACIO">Tossa de Mar</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Tossa de Mar</SimpleData>
+<SimpleData name="COMARCA">Selva</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO">Av. Pelegrí, 25</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">972 34 09 03</SimpleData>
+<SimpleData name="CONCESSIONARI">SARFA, SL</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">902 30 20 25</SimpleData>
+<SimpleData name="CODI_POSTAL">17320</SimpleData>
+<SimpleData name="WEB">www.sarfa.es</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.92779392430937,41.7211673301197,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Sant Feliu de Guíxols</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">16</SimpleData>
+<SimpleData name="NOM_ESTACIO">Sant Feliu de Guíxols</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG">Servei</SimpleData>
+<SimpleData name="MUNICIPI">St.Feliu de Guíxols</SimpleData>
+<SimpleData name="COMARCA">Baix Empordà</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO">Camí dels Enamorats, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">972 30 02 62</SimpleData>
+<SimpleData name="CONCESSIONARI">SARFA, SL</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">902 30 20 25</SimpleData>
+<SimpleData name="CODI_POSTAL">17220</SimpleData>
+<SimpleData name="WEB">www.sarfa.com</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>3.02227414351526,41.7806775807788,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Platja d&apos;Aro</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">15</SimpleData>
+<SimpleData name="NOM_ESTACIO">Platja d&apos;Aro</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Castell-Platja d&apos;Aro</SimpleData>
+<SimpleData name="COMARCA">Baix Empordà</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO">Av. Londres, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">972 82 67 87</SimpleData>
+<SimpleData name="CONCESSIONARI">SARFA, SL</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">902 30 20 25</SimpleData>
+<SimpleData name="CODI_POSTAL">17250</SimpleData>
+<SimpleData name="WEB">www.sarfa.com</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>3.06073784443617,41.8126440426731,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>La Bisbal d&apos;Empordà</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">11</SimpleData>
+<SimpleData name="NOM_ESTACIO">La Bisbal d&apos;Empordà</SimpleData>
+<SimpleData name="ESTAT">Projecte</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">La Bisbal d&apos;Empordà</SimpleData>
+<SimpleData name="COMARCA">Baix Empordà</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO"></SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI"></SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL"></SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>3.03577834583132,41.9637826348246,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Palamós</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">14</SimpleData>
+<SimpleData name="NOM_ESTACIO">Palamós</SimpleData>
+<SimpleData name="ESTAT">Projecte</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Calonge</SimpleData>
+<SimpleData name="COMARCA">Baix Empordà</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO"></SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI"></SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL"></SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>3.11366818124411,41.8491088224814,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Palafrugell</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">12</SimpleData>
+<SimpleData name="NOM_ESTACIO">Palafrugell</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG">Servei</SimpleData>
+<SimpleData name="MUNICIPI">Palafrugell</SimpleData>
+<SimpleData name="COMARCA">Baix Empordà</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO">Lluís Companys, 2</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">972 30 02 63</SimpleData>
+<SimpleData name="CONCESSIONARI">SARFA, SL</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">902 30 20 25</SimpleData>
+<SimpleData name="CODI_POSTAL">17200</SimpleData>
+<SimpleData name="WEB">www.sarfa.com</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>3.15756565965405,41.9159254667811,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Torroella de Montgrí</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">60</SimpleData>
+<SimpleData name="NOM_ESTACIO">Torroella de Montgrí</SimpleData>
+<SimpleData name="ESTAT">Projecte</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Torroella de Montgrí</SimpleData>
+<SimpleData name="COMARCA">Baix Empordà</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO"></SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI"></SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL"></SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>3.12620666525008,42.041105022133,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Figueres</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">8</SimpleData>
+<SimpleData name="NOM_ESTACIO">Figueres</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA">R11</SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Figueres</SimpleData>
+<SimpleData name="COMARCA">Alt Empordà</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO">Pl. de l&apos;Estació, 17</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">972 67 33 54</SimpleData>
+<SimpleData name="CONCESSIONARI">Gestora de Transports Costa Brava SL</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">972 67 70 60</SimpleData>
+<SimpleData name="CODI_POSTAL">17600</SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.96736864414368,42.2644205390699,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Empuriabrava</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">59</SimpleData>
+<SimpleData name="NOM_ESTACIO">Empuriabrava</SimpleData>
+<SimpleData name="ESTAT">Projecte</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Castelló d&apos;Empúries</SimpleData>
+<SimpleData name="COMARCA">Alt Empordà</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO"></SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI"></SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI"></SimpleData>
+<SimpleData name="CODI_POSTAL"></SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>3.12733123326972,42.2447289614758,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Roses</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">10</SimpleData>
+<SimpleData name="NOM_ESTACIO">Roses</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Roses</SimpleData>
+<SimpleData name="COMARCA">Alt Empordà</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO">Gran Via Pau Casals, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO">972 15 05 85</SimpleData>
+<SimpleData name="CONCESSIONARI">SARFA, SL</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">902 30 20 25</SimpleData>
+<SimpleData name="CODI_POSTAL">17480</SimpleData>
+<SimpleData name="WEB">www.sarfa.es</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>3.18062981911314,42.264818063104,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Cadaqués</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">9</SimpleData>
+<SimpleData name="NOM_ESTACIO">Cadaqués</SimpleData>
+<SimpleData name="ESTAT">Servei</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="MODALITAT">Terminal</SimpleData>
+<SimpleData name="BICEBERG"></SimpleData>
+<SimpleData name="MUNICIPI">Cadaqués</SimpleData>
+<SimpleData name="COMARCA">Alt Empordà</SimpleData>
+<SimpleData name="PROVINCIA">Girona</SimpleData>
+<SimpleData name="DIRECCIO">Riera de Sant Vicenç, s/n</SimpleData>
+<SimpleData name="TELEFON_ESTACIO"></SimpleData>
+<SimpleData name="CONCESSIONARI">Ajuntament de Cadaqués</SimpleData>
+<SimpleData name="TELEFON_CONCESSIONARI">972 25 82 00</SimpleData>
+<SimpleData name="CODI_POSTAL"></SimpleData>
+<SimpleData name="WEB"></SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>3.27259813519895,42.2892987294167,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Document>
+</kml>

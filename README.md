@@ -9,6 +9,7 @@ Built with:
     - nodejs
     - mongodb
     - python (to import data)
+        - pip3 install pykml
 
 
 misc notes
