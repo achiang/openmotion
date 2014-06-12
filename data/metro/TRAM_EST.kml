@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>TRANSPORT</name>
+<open>1</open>
+<Style id="Style1">
+<IconStyle>
+<color>ff000080</color>
+<scale>0.208332346653543</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+</Icon>
+</IconStyle>
+</Style>
+<Schema name="" id="Schema1">
+<SimpleField type="xsd:int" name="ID">
+</SimpleField>
+<SimpleField type="xsd:string" name="NOM_CAPA">
+</SimpleField>
+<SimpleField type="xsd:string" name="MODALITAT">
+</SimpleField>
+<SimpleField type="xsd:string" name="LINIA">
+</SimpleField>
+<SimpleField type="xsd:string" name="NOM_ESTACIO">
+</SimpleField>
+<SimpleField type="xsd:string" name="ZONIFICACIO">
+</SimpleField>
+<SimpleField type="xsd:string" name="CORRESPONDENCIA">
+</SimpleField>
+<SimpleField type="xsd:string" name="SERVEIS">
+</SimpleField>
+<SimpleField type="xsd:string" name="OBSERVACIONS">
+</SimpleField>
+</Schema>
+<Folder>
+<name>TRANSPORT.TRAM_EST</name>
+<Placemark>
+<name>Fontsanta i Fatjó</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">21</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2</SimpleData>
+<SimpleData name="NOM_ESTACIO">Fontsanta i Fatjó</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.06231782329774,41.3602701633887,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Bon Viatge</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">20</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2</SimpleData>
+<SimpleData name="NOM_ESTACIO">Bon Viatge</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.05883027285289,41.3646427714853,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Les Aigües</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">22</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2</SimpleData>
+<SimpleData name="NOM_ESTACIO">Les Aigües</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.06600611840813,41.3567799975011,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Cornellà Centre</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">23</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2</SimpleData>
+<SimpleData name="NOM_ESTACIO">Cornellà Centre</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L5-R.1-R4</SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.06967312836759,41.3573169129495,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Ignaci Iglésias</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">24</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2</SimpleData>
+<SimpleData name="NOM_ESTACIO">Ignaci Iglésias</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.07276892190294,41.3613569139958,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>La Fontsanta</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">19</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T2</SimpleData>
+<SimpleData name="NOM_ESTACIO">La Fontsanta</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.063082294656,41.3679007086999,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Centre Miquel Martí i Pol</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">18</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T2</SimpleData>
+<SimpleData name="NOM_ESTACIO">Centre Miquel Martí i Pol</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.07132883760428,41.3687284566583,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>El Pedró</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">25</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2</SimpleData>
+<SimpleData name="NOM_ESTACIO">El Pedró</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.07676925416326,41.3654342916373,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name></name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">1</SimpleData>
+<SimpleData name="NOM_CAPA">Bifurcacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO"></SimpleData>
+<SimpleData name="ZONIFICACIO"></SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.08022866284445,41.3688851062603,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Llevant-Les Planes</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">17</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T2</SimpleData>
+<SimpleData name="NOM_ESTACIO">Llevant-Les Planes</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.07616093808326,41.371016220546,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Montesa</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">26</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Montesa</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.08086981278302,41.3696139040304,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hospital Sant Joan Despí | TV3</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">16</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Hospital Sant Joan Despí | TV3</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.07580611668373,41.3723391899373,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>La Sardana</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">27</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">La Sardana</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.08392213029834,41.3727247041924,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Pont d&apos;Esplugues</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">28</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Pont d&apos;Esplugues</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.08850907950424,41.3767926012985,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Can Clota</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">29</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Can Clota</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.09367193246044,41.3769753769181,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Sant Feliu | Consell Comarcal</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">55</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Sant Feliu | Consell Comarcal</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.05268675136945,41.3795850237938,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Torreblanca</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">40</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Torreblanca</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.06069211974912,41.3797845985049,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Walden</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">41</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Walden</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.06704907259576,41.3797331039552,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Rambla de Sant Just</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">42</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Rambla de Sant Just</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.07522510789372,41.3788403536607,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Can n&apos;Oliveres</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">30</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Can n&apos;Oliveres</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.09828528935288,41.3766500553622,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Can Rigal</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">31</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Can Rigal</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.10609197002068,41.3761025293673,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Ernest Lluch</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">57</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Ernest Lluch</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.11084261591932,41.3767026998859,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Avinguda de Xile</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">32</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Avinguda de Xile</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.11479729860436,41.3806754902035,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Zona Universitària</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">33</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Zona Universitària</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L3</SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.11449065372833,41.3842044554882,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Palau Reial</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">34</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Palau Reial</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L3</SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.11861755590232,41.3859950478969,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Pius XII</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">35</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Pius XII</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.12148246924578,41.3867212978738,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Maria Cristina</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">36</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Maria Cristina</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L3</SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.12638568304569,41.3879646699666,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Numància</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">37</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Numància</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.1318359632411,41.3893437380252,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>L&apos;Illa</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">38</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">L&apos;Illa</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.13640433318727,41.3905049686833,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Francesc Macià</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">39</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T1-T2-T3</SimpleData>
+<SimpleData name="NOM_ESTACIO">Francesc Macià</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBAIX</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.1429899578455,41.3921819382415,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Marina</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">4</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T4</SimpleData>
+<SimpleData name="NOM_ESTACIO">Marina</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L1</SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.18687783955788,41.3939821425228,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Auditori | Teatre Nacional</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">5</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T4</SimpleData>
+<SimpleData name="NOM_ESTACIO">Auditori | Teatre Nacional</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.18689347916676,41.3974678467679,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Ciutadella | Vila Olímpica</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">2</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T4</SimpleData>
+<SimpleData name="NOM_ESTACIO">Ciutadella | Vila Olímpica</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L4</SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.19202375520085,41.3875861222237,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Wellington</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">3</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T4</SimpleData>
+<SimpleData name="NOM_ESTACIO">Wellington</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.18849876956405,41.3902522809999,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Glòries</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">15</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T4-T5</SimpleData>
+<SimpleData name="NOM_ESTACIO">Glòries</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L1</SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.18691287534046,41.4016956114457,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>La Farinera</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">53</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T5</SimpleData>
+<SimpleData name="NOM_ESTACIO">La Farinera</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.18832202776882,41.4037827695728,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Ca l&apos;Aranyó</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">14</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T4</SimpleData>
+<SimpleData name="NOM_ESTACIO">Ca l&apos;Aranyó</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.19129145611927,41.404422411394,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Can Jaumandreu</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">54</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T5</SimpleData>
+<SimpleData name="NOM_ESTACIO">Can Jaumandreu</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.19313333596197,41.4077813674524,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Pere IV</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">13</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T4</SimpleData>
+<SimpleData name="NOM_ESTACIO">Pere IV</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.19812707436525,41.4061358906449,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Fluvià</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">12</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T4</SimpleData>
+<SimpleData name="NOM_ESTACIO">Fluvià</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.20479899638345,41.4078078590492,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Espronceda</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">43</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T5</SimpleData>
+<SimpleData name="NOM_ESTACIO">Espronceda</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.19795940120491,41.4114396191256,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Selva de Mar</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">11</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T4</SimpleData>
+<SimpleData name="NOM_ESTACIO">Selva de Mar</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L4</SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.21035287119043,41.4091992878307,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Sant Martí de Provençals</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">44</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T5</SimpleData>
+<SimpleData name="NOM_ESTACIO">Sant Martí de Provençals</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.20324268873208,41.4153361658307,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>El Maresme</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">10</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T4</SimpleData>
+<SimpleData name="NOM_ESTACIO">El Maresme</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L4</SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.21579346234101,41.4105620185959,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Fòrum</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">9</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T4</SimpleData>
+<SimpleData name="NOM_ESTACIO">Fòrum</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L4</SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.21994703731682,41.4119528755077,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Alfons el Magnànim</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">46</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T5</SimpleData>
+<SimpleData name="NOM_ESTACIO">Alfons el Magnànim</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.21347520456112,41.417295577421,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Can Llima</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">8</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T4</SimpleData>
+<SimpleData name="NOM_ESTACIO">Can Llima</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.22298996859334,41.4153247598517,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>La Mina</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">56</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T6</SimpleData>
+<SimpleData name="NOM_ESTACIO">La Mina</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.22274993877984,41.418651111406,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Besòs</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">45</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T5</SimpleData>
+<SimpleData name="NOM_ESTACIO">Besòs</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L4</SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.20946506199739,41.4200509841933,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Parc del Besòs</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">47</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T5</SimpleData>
+<SimpleData name="NOM_ESTACIO">Parc del Besòs</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.21751032970247,41.4193521921015,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Central Tèrmica del Besòs</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">7</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T4-T6</SimpleData>
+<SimpleData name="NOM_ESTACIO">Central Tèrmica del Besòs</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.22624782117548,41.4189761548633,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>La Catalana</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">48</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T5-T6</SimpleData>
+<SimpleData name="NOM_ESTACIO">La Catalana</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.2218633113181,41.4226073186697,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Sant Joan Baptista</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">49</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T5-T6</SimpleData>
+<SimpleData name="NOM_ESTACIO">Sant Joan Baptista</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.22530887632893,41.4274859983148,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Estació de Sant Adrià</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">6</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T4-T6</SimpleData>
+<SimpleData name="NOM_ESTACIO">Estació de Sant Adrià</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA">R.1</SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.23065496122408,41.424092262059,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Encants de Sant Adrià</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">50</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T5-T6</SimpleData>
+<SimpleData name="NOM_ESTACIO">Encants de Sant Adrià</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA"></SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.22290444983689,41.4304584678793,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Sant Roc</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">51</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T5-T6</SimpleData>
+<SimpleData name="NOM_ESTACIO">Sant Roc</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L2</SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.22778764587606,41.4349739717875,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Gorg</name>
+<styleUrl>#Style1</styleUrl>
+<ExtendedData>
+<SchemaData schemaUrl="#Schema1">
+<SimpleData name="ID">52</SimpleData>
+<SimpleData name="NOM_CAPA">Estacions</SimpleData>
+<SimpleData name="MODALITAT">TRAMVIA</SimpleData>
+<SimpleData name="LINIA">T5-T6</SimpleData>
+<SimpleData name="NOM_ESTACIO">Gorg</SimpleData>
+<SimpleData name="ZONIFICACIO">Zona 1</SimpleData>
+<SimpleData name="CORRESPONDENCIA">L2-L10</SimpleData>
+<SimpleData name="SERVEIS"></SimpleData>
+<SimpleData name="OBSERVACIONS">TRAMBESÒS</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<coordinates>2.23264400671318,41.4392645004098,0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Document>
+</kml>

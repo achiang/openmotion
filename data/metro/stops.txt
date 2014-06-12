@@ -1,0 +1,186 @@
+stop_id,stop_code,stop_name,stop_lat,stop_lon,location_type,parent_station
+3,,Bolueta,  43.24700,  -2.90573,1,
+4,,Basarrate,  43.25116,  -2.91082,1,
+8,,Moyua,  43.26259,  -2.93308,1,
+13,,San Inazio,  43.28068,  -2.96239,1,
+17,,Leioa,  43.31788,  -2.99168,1,
+19,,Areeta,  43.32595,  -3.00961,1,
+27,,Larrabasterra,  43.37573,  -2.99147,1,
+28,,Sopela,  43.38021,  -2.97899,1,
+42,,Kabiezes,  43.32238,  -3.03777,1,
+12,,Sarriko,  43.27495,  -2.95874,1,
+14,,Lutxana,  43.29098,  -2.96992,1,
+16,,Astrabudua,  43.31463,  -2.98681,1,
+22,,Aiboa,  43.34414,  -3.00267,1,
+34,,Barakaldo,  43.29563,  -2.98936,1,
+35,,Bagatza,  43.29885,  -2.99268,1,
+2,,Etxebarri,  43.24386,  -2.89771,1,
+9,,Indautxu,  43.26127,  -2.94179,1,
+15,,Erandio,  43.30338,  -2.97437,1,
+23,,Algorta,  43.35045,  -3.00935,1,
+1,,Ariz,  43.23801,  -2.88203,1,
+7,,Abando,  43.26140,  -2.92761,1,
+10,,San Mames,  43.26252,  -2.94751,1,
+24,,Bidezabal,  43.35644,  -3.01127,1,
+26,,Berango,  43.36704,  -2.99949,1,
+37,,Sestao,  43.30912,  -3.00567,1,
+36,,Urbinaga,  43.30570,  -2.99260,1,
+41,,Santurtzi,  43.32895,  -3.03421,1,
+38,,Abatxolo,  43.31436,  -3.01357,1,
+6,,Casco Viejo,  43.25968,  -2.92071,1,
+40,,Peñota,  43.32198,  -3.02540,1,
+51,,Basauri,  43.23624,  -2.89340,1,
+5,,Santutxu,  43.25430,  -2.91335,1,
+20,,Gobela,  43.33308,  -3.00735,1,
+21,,Neguri,  43.34024,  -3.00562,1,
+30,,Plentzia,  43.40134,  -2.94636,1,
+32,,Gurutzeta/Cruces,  43.28301,  -2.98245,1,
+33,,Ansio,  43.28919,  -2.98716,1,
+39,,Portugalete,  43.31777,  -3.02076,1,
+11,,Deusto,  43.27145,  -2.94954,1,
+18,,Lamiako,  43.32133,  -3.00102,1,
+29,,Urduliz,  43.37882,  -2.95855,1,
+1.1,,Ascensor (Ariz),  43.23767,  -2.88255,2,1
+1.2,,Nagusia (Ariz),  43.23784,  -2.88355,2,1
+1.3,,Valencia (Ariz),  43.23798,  -2.88125,2,1
+2.1,,Etxebarri (Etxebarri),  43.24387,  -2.89668,2,2
+2.2,,Parking (Etxebarri),  43.24467,  -2.89696,2,2
+3.1,,Bolueta (Bolueta),  43.24709,  -2.90590,2,3
+4.1,,Ascensor Exter. (Basarrate),  43.25077,  -2.91057,2,4
+4.2,,Basarrate (Basarrate),  43.25062,  -2.91147,2,4
+5.1,,Ascensor Exter. (Santutxu),  43.25383,  -2.91343,2,5
+5.2,,Karmelo (Santutxu),  43.25407,  -2.91472,2,5
+5.3,,Zabalbide (Santutxu),  43.25547,  -2.91312,2,5
+6.1,,Ascen. Mallona (Casco Viejo),  43.26024,  -2.91987,2,6
+6.2,,San Nikolas (Casco Viejo),  43.25997,  -2.92214,2,6
+6.3,,Unamuno (Casco Viejo),  43.25863,  -2.92163,2,6
+7.1,,Ascensor Exter. (Abando),  43.26144,  -2.92820,2,7
+7.2,,Berastegi (Abando),  43.26203,  -2.92804,2,7
+7.3,,Gran Vía (Abando),  43.26134,  -2.92783,2,7
+7.4,,Renfe (Abando),  43.26078,  -2.92746,2,7
+8.1,,Ascensor Exter. (Moyua),  43.26267,  -2.93377,2,8
+8.2,,Diputación (Moyua),  43.26194,  -2.93254,2,8
+8.3,,Elcano (Moyua),  43.26262,  -2.93454,2,8
+8.4,,Ercilla (Moyua),  43.26316,  -2.93432,2,8
+9.1,,Ascensor Exter. (Indautxu),  43.26125,  -2.94234,2,9
+9.2,,Doctor Areilza (Indautxu),  43.26066,  -2.94273,2,9
+9.3,,Indautxu (Indautxu),  43.26080,  -2.94001,2,9
+10.1,,Ascensor Exter. (San Mames),  43.26254,  -2.94819,2,10
+10.2,,Luis Briñas (San Mames),  43.26136,  -2.94885,2,10
+10.3,,Sabino Arana (San Mames),  43.26274,  -2.94610,2,10
+11.1,,Ascensor Exter. (Deusto),  43.27182,  -2.94947,2,11
+11.2,,Iruña (Deusto),  43.27049,  -2.94939,2,11
+11.3,,Lehend. Agirre (Deusto),  43.27186,  -2.94859,2,11
+12.1,,Sarriko (Sarriko),  43.27441,  -2.95807,2,12
+13.1,,Ascensor Exter. (San Inazio),  43.28137,  -2.96265,2,13
+13.2,,Asturias (San Inazio),  43.28147,  -2.96300,2,13
+13.3,,García Alonso (San Inazio),  43.27993,  -2.96214,2,13
+13.4,,Lekeitio (San Inazio),  43.28002,  -2.96187,2,13
+13.5,,Plaza Levante (San Inazio),  43.28144,  -2.96246,2,13
+14.1,,Lutxana 1 (Lutxana),  43.29113,  -2.97005,2,14
+14.2,,Lutxana 2 (Lutxana),  43.29136,  -2.96983,2,14
+15.1,,Erandio (Erandio),  43.30379,  -2.97447,2,15
+16.1,,Astrabudua 1 (Astrabudua),  43.31448,  -2.98677,2,16
+16.2,,Astrabudua 2 (Astrabudua),  43.31482,  -2.98681,2,16
+17.1,,Leioa (Leioa),  43.31799,  -2.99203,2,17
+17.2,,Parking (Leioa),  43.31797,  -2.99244,2,17
+18.1,,Lamiako 1 (Lamiako),  43.32142,  -3.00159,2,18
+18.2,,Lamiako 2 (Lamiako),  43.32162,  -3.00145,2,18
+19.1,,Ascensor Exter. (Areeta),  43.32637,  -3.01017,2,19
+19.2,,Geltoki Plaza (Areeta),  43.32651,  -3.01040,2,19
+19.3,,Ibaigane (Areeta),  43.32548,  -3.00885,2,19
+20.1,,Gobela (Gobela),  43.33360,  -3.00704,2,20
+21.1,,Neguri 1 (Neguri),  43.34035,  -3.00631,2,21
+21.2,,Neguri 2 (Neguri),  43.34014,  -3.00563,2,21
+22.1,,Alango (Aiboa),  43.34359,  -3.00288,2,22
+22.2,,Txakursolo (Aiboa),  43.34359,  -3.00288,2,22
+23.1,,Ascensor Exter. (Algorta),  43.35078,  -3.00946,2,23
+23.2,,Bolue (Algorta),  43.34988,  -3.00910,2,23
+23.3,,Telletxe (Algorta),  43.35102,  -3.00957,2,23
+24.1,,Bidezabal (Bidezabal),  43.35694,  -3.01166,2,24
+24.2,,Via 1 (Bidezabal),  43.35698,  -3.01177,2,24
+24.3,,Via 2 (Bidezabal),  43.35682,  -3.01148,2,24
+26.1,,Berango (Berango),  43.36676,  -2.99942,2,26
+27.1,,Gatzarriñe (Larrabasterra),  43.37554,  -2.99160,2,27
+27.2,,Loyola Ander (Larrabasterra),  43.37554,  -2.99160,2,27
+28.1,,Inferior (Sopela),  43.38017,  -2.97879,2,28
+28.2,,Zubigabe (Sopela),  43.38024,  -2.97926,2,28
+29.1,,Urduliz 1 (Urduliz),  43.37893,  -2.95849,2,29
+29.2,,Urduliz 2 (Urduliz),  43.37883,  -2.95832,2,29
+30.1,,Plentzia (Plentzia),  43.40183,  -2.94640,2,30
+32.1,,Ascensor Exter. (Gurutzeta/Cruces),  43.28320,  -2.98296,2,32
+32.2,,Balejo (Gurutzeta/Cruces),  43.28231,  -2.98269,2,32
+32.3,,Llano (Gurutzeta/Cruces),  43.28358,  -2.98132,2,32
+33.1,,Ansio (Ansio),  43.28975,  -2.98699,2,33
+34.1,,Ascensor Exter. (Barakaldo),  43.29531,  -2.98890,2,34
+34.2,,Elcano (Barakaldo),  43.29623,  -2.98903,2,34
+34.3,,Fueros (Barakaldo),  43.29530,  -2.98824,2,34
+34.4,,Palac. Justicia (Barakaldo),  43.29465,  -2.98900,2,34
+35.1,,Ascensor Exter. (Bagatza),  43.29849,  -2.99262,2,35
+35.2,,Gabriel Aresti (Bagatza),  43.29834,  -2.99352,2,35
+35.3,,Santa Teresa (Bagatza),  43.29973,  -2.99318,2,35
+36.1,,Urbinaga (Urbinaga),  43.30593,  -2.99238,2,36
+37.1,,Ascensor Exter. (Sestao),  43.30934,  -3.00663,2,37
+37.2,,Camino Txikito (Sestao),  43.31029,  -3.00575,2,37
+37.3,,Kasko (Sestao),  43.30952,  -3.00728,2,37
+37.4,,La Salle (Sestao),  43.30867,  -3.00426,2,37
+38.1,,Ascensor Ext. (Abatxolo),  43.31465,  -3.01366,2,38
+38.2,,Azeta (Abatxolo),  43.31376,  -3.01251,2,38
+38.3,,Los Palangreros (Abatxolo),  43.31488,  -3.01327,2,38
+39.1,,Ascensor Ext. (Portugalete),  43.31795,  -3.02144,2,39
+39.2,,Carlos Vii (Portugalete),  43.31809,  -3.02212,2,39
+39.3,,Maestro Zubeldi (Portugalete),  43.31796,  -3.01981,2,39
+40.1,,Ascensor Ext. (Peñota),  43.32200,  -3.02593,2,40
+40.2,,S. Juan De Dios (Peñota),  43.32316,  -3.02489,2,40
+40.3,,Simon Bolivar (Peñota),  43.32201,  -3.02453,2,40
+41.1,,Ascensor Ext. (Santurtzi),  43.32923,  -3.03426,2,41
+41.2,,Las Viñas (Santurtzi),  43.32857,  -3.03476,2,41
+41.3,,Maestro Calles (Santurtzi),  43.32968,  -3.03398,2,41
+41.4,,Mamariga (Santurtzi),  43.33167,  -3.03812,2,41
+42.1,,Antonio Alzaga (Kabiezes),  43.32231,  -3.03661,2,42
+42.2,,Ascensor (Kabiezes),  43.32224,  -3.03726,2,42
+42.3,,Lauaxeta (Kabiezes),  43.32253,  -3.03896,2,42
+51.1,,Ascensor (Basauri),  43.23656,  -2.89457,2,51
+51.2,,Basozelai (Basauri),  43.23521,  -2.89202,2,51
+51.3,,Bidasoa (Basauri),  43.23753,  -2.89476,2,51
+3.0,BOL,Bolueta,  43.24700,  -2.90573,0,3
+4.0,BAS,Basarrate,  43.25116,  -2.91082,0,4
+8.0,MOY,Moyua,  43.26259,  -2.93308,0,8
+13.0,SIN,San Inazio,  43.28068,  -2.96239,0,13
+17.0,LEI,Leioa,  43.31788,  -2.99168,0,17
+19.0,ARE,Areeta,  43.32595,  -3.00961,0,19
+27.0,LAR,Larrabasterra,  43.37573,  -2.99147,0,27
+28.0,SOP,Sopela,  43.38021,  -2.97899,0,28
+42.0,KAB,Kabiezes,  43.32238,  -3.03777,0,42
+12.0,SAR,Sarriko,  43.27495,  -2.95874,0,12
+14.0,LUT,Lutxana,  43.29098,  -2.96992,0,14
+16.0,AST,Astrabudua,  43.31463,  -2.98681,0,16
+22.0,AIB,Aiboa,  43.34414,  -3.00267,0,22
+34.0,BAR,Barakaldo,  43.29563,  -2.98936,0,34
+35.0,BAG,Bagatza,  43.29885,  -2.99268,0,35
+2.0,ETX,Etxebarri,  43.24386,  -2.89771,0,2
+9.0,IND,Indautxu,  43.26127,  -2.94179,0,9
+15.0,ERA,Erandio,  43.30338,  -2.97437,0,15
+23.0,ALG,Algorta,  43.35045,  -3.00935,0,23
+1.0,ARZ,Ariz,  43.23801,  -2.88203,0,1
+7.0,ABA,Abando,  43.26140,  -2.92761,0,7
+10.0,SAM,San Mames,  43.26252,  -2.94751,0,10
+24.0,BID,Bidezabal,  43.35644,  -3.01127,0,24
+26.0,BER,Berango,  43.36704,  -2.99949,0,26
+37.0,SES,Sestao,  43.30912,  -3.00567,0,37
+36.0,URB,Urbinaga,  43.30570,  -2.99260,0,36
+41.0,STZ,Santurtzi,  43.32895,  -3.03421,0,41
+38.0,ABT,Abatxolo,  43.31436,  -3.01357,0,38
+6.0,CAV,Casco Viejo,  43.25968,  -2.92071,0,6
+40.0,PEN,Peñota,  43.32198,  -3.02540,0,40
+51.0,BSR,Basauri,  43.23624,  -2.89340,0,51
+5.0,SAN,Santutxu,  43.25430,  -2.91335,0,5
+20.0,GOB,Gobela,  43.33308,  -3.00735,0,20
+21.0,NEG,Neguri,  43.34024,  -3.00562,0,21
+30.0,PLE,Plentzia,  43.40134,  -2.94636,0,30
+32.0,GUR,Gurutzeta/Cruces,  43.28301,  -2.98245,0,32
+33.0,ANS,Ansio,  43.28919,  -2.98716,0,33
+39.0,POR,Portugalete,  43.31777,  -3.02076,0,39
+11.0,DEU,Deusto,  43.27145,  -2.94954,0,11
+18.0,LAM,Lamiako,  43.32133,  -3.00102,0,18
+29.0,URD,Urduliz,  43.37882,  -2.95855,0,29

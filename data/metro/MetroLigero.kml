@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"  xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2"    
+     xmlns:atom="http://www.w3.org/2005/Atom">
+    <Document>
+        <name>Base de Datos Ciudad - Ayuntamiento de Madrid</name>
+        <description>Sólo contiene datos dentro del municipio de Madrid </description>
+        <visibility>1</visibility>
+        <open>1</open> 
+        <Folder>
+	<name>Metro Ligero</name>
+	<description>Sólo contiene datos dentro del municipio de Madrid</description>
+<Placemark> <Point> <coordinates> -3.6513669165166895,
+40.48904179501775 </coordinates> </Point><name>1 ALVAREZ DE VILLAAMIL</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.6535386316482197,
+40.485452981863574 </coordinates> </Point><name>1 ANTONIO SAURA</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.6558486700744695,
+40.493674071528204 </coordinates> </Point><name>1 BLASCO IBAÑEZ</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.6632546867013684,
+40.48481204955866 </coordinates> </Point><name>1 FUENTE DE LA MORA</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.66932787372756,
+40.50823629104764 </coordinates> </Point><name>1 LAS TABLAS</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.658891891081716,
+40.497161236769024 </coordinates> </Point><name>1 MARIA TUDOR</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.665074706989077,
+40.505432048198514 </coordinates> </Point><name>1 PALAS DE REY</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.6668424410896368,
+40.48013377587404 </coordinates> </Point><name>1 PINAR DE CHAMARTIN</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.6609904907567925,
+40.48733851789946 </coordinates> </Point><name>1 VIRGEN DEL CORTIJO</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.7930611009107316,
+40.43930083727808 </coordinates> </Point><name>2 AVENIDA DE EUROPA</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.807553818113316,
+40.43057890865037 </coordinates> </Point><name>2 BELGICA</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.791204405870805,
+40.44486308857277 </coordinates> </Point><name>2 BERNA</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.79525513054887,
+40.43337587213629 </coordinates> </Point><name>2 CAMPUS DE SOMOSAGUAS</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.784411008124424,
+40.40720671426678 </coordinates> </Point><name>2 COLONIA DE LOS ANGELES</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.774570891731054,
+40.39697571967719 </coordinates> </Point><name>2 COLONIA JARDIN</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.801623377956172,
+40.43253008873702 </coordinates> </Point><name>2 DOS CASTILLAS</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.7859147953752994,
+40.4483225811108 </coordinates> </Point><name>2 ESTACION DE ARAVACA</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.804481628576368,
+40.42306880990105 </coordinates> </Point><name>2 POZUELO OESTE</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.781219298249051,
+40.40229137248812 </coordinates> </Point><name>2 PRADO DE LA VEGA</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.787489583039874,
+40.41046507293738 </coordinates> </Point><name>2 PRADO DEL REY</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.7987441577370675,
+40.4193608465657 </coordinates> </Point><name>2 SOMOSAGUAS CENTRO</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.7925323964149658,
+40.41535854915256 </coordinates> </Point><name>2 SOMOSAGUAS SUR</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.8800471903912226,
+40.40713093634462 </coordinates> </Point><name>3 BOADILLA CENTRO</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.8643981145298136,
+40.39528502663989 </coordinates> </Point><name>3 CANTABRIA</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.783998919412633,
+40.39708334989402 </coordinates> </Point><name>3 CIUDAD DE LA IMAGEN</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.795575774769704,
+40.394544805059674 </coordinates> </Point><name>3 CIUDAD DEL CINE</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.8038633974900193,
+40.39687488124612 </coordinates> </Point><name>3 COCHERAS</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.774511978872446,
+40.39697611431255 </coordinates> </Point><name>3 COLONIA JARDIN</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.879390574756271,
+40.40195575759452 </coordinates> </Point><name>3 FERIAL DE BOADILLA</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.8974145751993343,
+40.405943385382606 </coordinates> </Point><name>3 INFANTE DON LUIS</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.7899399393523345,
+40.39525011444458 </coordinates> </Point><name>3 JOSE ISBERT</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.8358094207577422,
+40.39791864382318 </coordinates> </Point><name>3 MONTEPRINCIPE</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.885766992370484,
+40.40563680956141 </coordinates> </Point><name>3 NUEVO MUNDO</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.8477451086794083,
+40.395011924620896 </coordinates> </Point><name>3 PRADO DEL ESPINO</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.903791080679537,
+40.407767585274755 </coordinates> </Point><name>3 PUERTA DE BOADILLA</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.8167531226788824,
+40.398712483353385 </coordinates> </Point><name>3 RETAMARES</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.892642623606615,
+40.40512447171537 </coordinates> </Point><name>3 SIGLO XXI</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.838120020545176,
+40.39419920761245 </coordinates> </Point><name>3 VENTORRO DEL CANO</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.760719745495282,
+40.223424593837095 </coordinates> </Point><name>4 AVENIDA SISTEMA SOLAR</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.7723663991203362,
+40.234726214904676 </coordinates> </Point><name>4 BULEVAR SUR</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.7538308042750295,
+40.23071315867877 </coordinates> </Point><name>4 ESTRELLA POLAR SUR</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.7705898176961847,
+40.23770211661923 </coordinates> </Point><name>4 IGLESIA CENTRO</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.765084714008081,
+40.231134822484066 </coordinates> </Point><name>4 ISABEL II</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.752405550534627,
+40.23469553863154 </coordinates> </Point><name>4 JAIME I SUR</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.7623288846721823,
+40.245342651195344 </coordinates> </Point><name>4 JULIO ROMERO DE TORRES</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.7663570457305875,
+40.24598273320263 </coordinates> </Point><name>4 LA BALLENA</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.769543246100782,
+40.240790258831254 </coordinates> </Point><name>4 PARLA CENTRO - BULEVAR NORTE</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.761477955649932,
+40.22815850866993 </coordinates> </Point><name>4 PARQUE PARLA ESTE</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.7575650854384035,
+40.24409461492802 </coordinates> </Point><name>4 PLAZA DE TOROS</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.750450952340516,
+40.23866331388882 </coordinates> </Point><name>4 POLIGONO INDUSTRIAL CIUDAD DE PARLA</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.7700012711318576,
+40.23140853284671 </coordinates> </Point><name>4 REYES CATOLICOS</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.7567490296953077,
+40.22254068214155 </coordinates> </Point><name>4 TIERRA SUR</name>
+</Placemark>
+<Placemark> <Point> <coordinates> -3.7552217357815336,
+40.22683008536884 </coordinates> </Point><name>4 VENUS SUR</name>
+</Placemark>
+        </Folder>
+    </Document>
+</kml>
