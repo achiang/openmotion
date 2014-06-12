@@ -21,3 +21,9 @@ http://docs.mongodb.org/manual/tutorial/build-a-2dsphere-index/
 
 For bcn biking, need to replace all escaped html with utf-8 equivs. I did
 this manually in vim (ugh).
+
+For London bus-stops, had to:
+
+  - vi bus-stops.csv
+    :set nobomb
+    :wq

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import bng
 import csv
 import pymongo
 from lxml import etree
@@ -124,6 +125,29 @@ def parse_malaga_bus():
 
     return [station]
 
+def parse_london_bus():
+    with open('data/bus/bus-stops.csv') as f:
+        reader = csv.reader(f, delimiter=',')
+
+        stations = []
+        for row in reader:
+            if row[0] == "Stop_Code_LBSL":
+                continue
+
+            station = {}
+            station['city'] = 'London'
+            station['name'] = row[3]            # Stop_Name
+
+            loc = {}
+            loc['type'] = 'Point'
+            lng, lat = bng.tolnglat(int(row[4]), int(row[5]))
+            loc['coordinates'] = [ lng, lat ]
+            station['loc'] = loc
+
+            stations.append(station)
+
+    return stations
+
 def parse_bus():
     station_parsers = [
         ['Madrid', parse_madrid_bus],
@@ -131,6 +155,7 @@ def parse_bus():
         ['Valencia', parse_valencia_bus],
         ['Malaga', parse_malaga_bus],
         ['Bilbao', parse_bilbao_bus],
+        ['London', parse_london_bus],
     ]
     client = pymongo.MongoClient()
     db = client.openmotion
