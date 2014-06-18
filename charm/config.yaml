@@ -1,11 +1,11 @@
 options:
   app_name:
     type: string
-    default: myapp
-    description: Application Name
+    default: openmotion
+    description: OpenMotion
   app_port:
     type: int
-    default: 8000
+    default: 3000
     description: Port where the application will handle requests
   app_scm:
     type: string
@@ -13,7 +13,7 @@ options:
     description: Repository type (git/bzr/...)
   app_url:
     type: string
-    default: "http://github.com/mmm/testnode.git"
+    default: "https://github.com/achiang/openmotion.git"
     description: Application repository URL
   app_branch:
     type: string
