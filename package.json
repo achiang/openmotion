@@ -1,0 +1,12 @@
+{ "name" :            "openmotion"
+    , "description" :     "REST endpoints for opengov data"
+    , "version" :    "0.1"
+    , "dependencies": {
+        "mongoose": "*"
+        ,"restify": "*"
+    }
+    , "repository" : {
+        "type" :  "git"
+        ,"url" :   "https://github.com/achiang/openmotion.git"
+    }
+}

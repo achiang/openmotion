@@ -1,7 +1,12 @@
+var config = require('./config');
 var restify = require('restify');
-var server = restify.createServer({name: 'openmotion'});
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/openmotion');
+var server = restify.createServer({name: config.name});
+
+var mongo_uri = 'mongodb://' + config.mongo_host + ':' + config.mongo_port;
+mongo_uri += '/' + config.name;
+console.log(mongo_uri);
+mongoose.connect(mongo_uri);
 
 var Schema = mongoose.Schema;
 var BikeSchema = new Schema({
@@ -15,7 +20,7 @@ server
     .use(restify.fullResponse())
     .use(restify.bodyParser());
 
-server.listen(3000, function() {
+server.listen(config.listen_port, function() {
     console.log('%s listening at %s', server.name, server.url);
 });
 
