@@ -177,7 +177,8 @@ def drop_and_recreate(mongo_uri):
 
 def get_mongo_config():
     import os
-    with open(os.path.realpath(__file__) + '/config/config.js') as f:
+    path = os.path.dirname(os.path.realpath(__file__)) + '/config/config.js'
+    with open(path) as f:
         for line in f:
             if 'mongo_host' in line:
                 mongo_host = line.split(':')[-1].strip().replace("\"", "")
