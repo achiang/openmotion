@@ -59,6 +59,7 @@ EOS
 [[ -d ${app_dir} ]] || install_app
 
 install_openmotion() {
+    apt-get -y install -qq libxml2-dev libxslt1-dev zlib1g-dev
     apt-get -y install -qq python3-pip python3-simplejson python3-pymongo
     pip3 install pykml
 }
