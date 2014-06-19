@@ -1,4 +1,4 @@
-var config = require('./config');
+var config = require('./config/config');
 var restify = require('restify');
 var mongoose = require('mongoose');
 var server = restify.createServer({name: config.name});
