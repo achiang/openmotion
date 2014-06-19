@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 
 import csv
+import os
 import pymongo
 import simplejson as json
 from lxml import etree
 
+basepath = os.path.dirname(os.path.realpath(__file__)) + '/'
+
 def parse_london_bikes():
-    tree = etree.parse('data/bikes/livecyclehireupdates.xml')
+    tree = etree.parse(basepath + 'data/bikes/livecyclehireupdates.xml')
     root = tree.getroot()
 
     stations = []
@@ -36,7 +39,7 @@ def parse_london_bikes():
     return stations
 
 def parse_bcn_bikes():
-    tree = etree.parse('data/bikes/bcnbicing.xml')
+    tree = etree.parse(basepath + 'data/bikes/bcnbicing.xml')
     root = tree.getroot()
 
     stations = []
@@ -75,7 +78,7 @@ def parse_bcn_bikes():
     return stations
 
 def parse_valencia_bikes():
-    json_data = open('data/bikes/Valenbisi.JSON').read()
+    json_data = open(basepath + 'data/bikes/Valenbisi.JSON').read()
     data = json.loads(json_data)
 
     stations = []
@@ -94,7 +97,7 @@ def parse_valencia_bikes():
     return stations
 
 def parse_zaragoza_bikes():
-    json_data = open('data/bikes/zaragoza.json').read()
+    json_data = open(basepath + 'data/bikes/zaragoza.json').read()
     data = json.loads(json_data)
 
     stations = []
@@ -115,7 +118,7 @@ def parse_zaragoza_bikes():
 
 def parse_malaga_bikes():
     stations = []
-    with open('data/bikes/Estacionamientos.csv') as f:
+    with open(basepath + 'data/bikes/Estacionamientos.csv') as f:
         reader = csv.reader(f, delimiter=',')
         for row in reader:
             if row[0] == "ID":
@@ -176,9 +179,7 @@ def drop_and_recreate(mongo_uri):
     client.disconnect()
 
 def get_mongo_config():
-    import os
-    path = os.path.dirname(os.path.realpath(__file__)) + '/config/config.js'
-    with open(path) as f:
+    with open(basepath + 'config/config.js') as f:
         for line in f:
             if 'mongo_host' in line:
                 mongo_host = line.split(':')[-1].strip().replace("\"", "")
