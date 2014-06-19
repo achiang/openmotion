@@ -58,6 +58,12 @@ EOS
 }
 [[ -d ${app_dir} ]] || install_app
 
+install_openmotion() {
+    apt-get -y install -qq python3-pip python3-simplejson python3-pymongo
+    pip3 install pykml
+}
+install_openmotion
+
 juju-log "Delaying app startup until mongodb joins" 
 #juju-log "starting app"
 #service ${app_name} restart || service ${app_name} start
