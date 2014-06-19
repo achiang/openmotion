@@ -7,6 +7,8 @@ import simplejson as json
 from lxml import etree
 
 basepath = os.path.dirname(os.path.realpath(__file__)) + '/'
+for k in os.environ.keys():
+    print(k, os.environ[k])
 
 def parse_london_bikes():
     tree = etree.parse(basepath + 'data/bikes/livecyclehireupdates.xml')
