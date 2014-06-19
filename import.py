@@ -135,7 +135,7 @@ def parse_malaga_bikes():
 
     return stations
 
-def parse_bikes():
+def parse_bikes(mongo_uri):
     station_parsers = [
         ['London', parse_london_bikes],
         ['Barcelona', parse_bcn_bikes],
@@ -144,7 +144,7 @@ def parse_bikes():
         ['Zaragoza', parse_zaragoza_bikes],
     ]
 
-    client = pymongo.MongoClient()
+    client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     bikes = db.bikes
 
@@ -162,19 +162,30 @@ def parse_bikes():
 
     client.disconnect()
 
-def drop_and_recreate():
-    client = pymongo.MongoClient()
+def drop_and_recreate(mongo_uri):
+    client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     db.drop_collection('bikes')
     client.disconnect()
 
-    client = pymongo.MongoClient()
+    client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     db.bikes.ensure_index([('loc', pymongo.GEOSPHERE)])
     db.bikes.ensure_index([('city', pymongo.ASCENDING),
                            ('station_id', pymongo.ASCENDING)], unique=True)
     client.disconnect()
 
+def get_mongo_config():
+    with open('config/config.js') as f:
+        for line in f:
+            if 'mongo_host' in line:
+                mongo_host = line.split(':')[-1].strip().replace("\"", "")
+            if 'mongo_port' in line:
+                mongo_port = line.split(':')[-1].strip()
+
+    return 'mongodb://' + mongo_host + ':' + mongo_port + '/'
+
 if __name__ == "__main__":
-    drop_and_recreate()
-    parse_bikes()
+    mongo_uri = get_mongo_config()
+    drop_and_recreate(mongo_uri)
+    parse_bikes(mongo_uri)
