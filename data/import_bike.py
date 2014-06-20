@@ -7,11 +7,9 @@ import simplejson as json
 from lxml import etree
 
 basepath = os.path.dirname(os.path.realpath(__file__)) + '/'
-for k in os.environ.keys():
-    print(k, os.environ[k])
 
 def parse_london_bikes():
-    tree = etree.parse(basepath + 'data/bikes/livecyclehireupdates.xml')
+    tree = etree.parse(basepath + 'bike/livecyclehireupdates.xml')
     root = tree.getroot()
 
     stations = []
@@ -41,7 +39,7 @@ def parse_london_bikes():
     return stations
 
 def parse_bcn_bikes():
-    tree = etree.parse(basepath + 'data/bikes/bcnbicing.xml')
+    tree = etree.parse(basepath + 'bike/bcnbicing.xml')
     root = tree.getroot()
 
     stations = []
@@ -80,7 +78,7 @@ def parse_bcn_bikes():
     return stations
 
 def parse_valencia_bikes():
-    json_data = open(basepath + 'data/bikes/Valenbisi.JSON').read()
+    json_data = open(basepath + 'bike/Valenbisi.JSON').read()
     data = json.loads(json_data)
 
     stations = []
@@ -99,7 +97,7 @@ def parse_valencia_bikes():
     return stations
 
 def parse_zaragoza_bikes():
-    json_data = open(basepath + 'data/bikes/zaragoza.json').read()
+    json_data = open(basepath + 'bike/zaragoza.json').read()
     data = json.loads(json_data)
 
     stations = []
@@ -120,7 +118,7 @@ def parse_zaragoza_bikes():
 
 def parse_malaga_bikes():
     stations = []
-    with open(basepath + 'data/bikes/Estacionamientos.csv') as f:
+    with open(basepath + 'bike/Estacionamientos.csv') as f:
         reader = csv.reader(f, delimiter=',')
         for row in reader:
             if row[0] == "ID":
@@ -151,7 +149,7 @@ def parse_bikes(mongo_uri):
 
     client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
-    bikes = db.bikes
+    bikes = db.bike
 
     for parser in station_parsers:
         stations = parser[1]()
@@ -170,18 +168,18 @@ def parse_bikes(mongo_uri):
 def drop_and_recreate(mongo_uri):
     client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
-    db.drop_collection('bikes')
+    db.drop_collection('bike')
     client.disconnect()
 
     client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
-    db.bikes.ensure_index([('loc', pymongo.GEOSPHERE)])
-    db.bikes.ensure_index([('city', pymongo.ASCENDING),
+    db.bike.ensure_index([('loc', pymongo.GEOSPHERE)])
+    db.bike.ensure_index([('city', pymongo.ASCENDING),
                            ('station_id', pymongo.ASCENDING)], unique=True)
     client.disconnect()
 
 def get_mongo_config():
-    with open(basepath + 'config/config.js') as f:
+    with open(basepath + '../config/config.js') as f:
         for line in f:
             if 'mongo_host' in line:
                 mongo_host = line.split(':')[-1].strip().replace("\"", "")
