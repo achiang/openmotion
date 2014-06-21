@@ -6,11 +6,11 @@ import pymongo
 from lxml import etree
 from pykml import parser
 
-def parse_madrid_bus():
-    files = ['data/bus/EMT.kml', 'data/bus/Interurbanos.kml']
+def parse_madrid_bus(basepath):
+    files = ['bus/EMT.kml', 'bus/Interurbanos.kml']
     places = []
     for f in files:
-        with open(f, 'rb') as x:
+        with open(basepath + f, 'rb') as x:
             xml = etree.parse(x)
         k = parser.fromstring(etree.tostring(xml))
         places.extend(k.findall('.//{http://www.opengis.net/kml/2.2}Placemark'))
@@ -33,8 +33,8 @@ def parse_madrid_bus():
 
     return stations
 
-def parse_bcn_bus():
-    with open('data/bus/BUS_EST.kml', 'rb') as f:
+def parse_bcn_bus(basepath):
+    with open(basepath + 'bus/BUS_EST.kml', 'rb') as f:
         xml = etree.parse(f)
 
     k = parser.fromstring(etree.tostring(xml))
@@ -61,8 +61,8 @@ def parse_bcn_bus():
 
     return stations
 
-def parse_valencia_bus():
-    with open('data/bus/Emt_paradas.KML', 'rb') as f:
+def parse_valencia_bus(basepath):
+    with open(basepath + 'bus/Emt_paradas.KML', 'rb') as f:
         xml = etree.parse(f)
 
     k = parser.fromstring(etree.tostring(xml))
@@ -90,8 +90,8 @@ def parse_valencia_bus():
 
     return stations
 
-def parse_bilbao_bus():
-    with open('data/bus/stops.txt') as f:
+def parse_bilbao_bus(basepath):
+    with open(basepath + 'bus/stops.txt') as f:
         reader = csv.reader(f, delimiter=',')
 
         stations = []
@@ -112,7 +112,7 @@ def parse_bilbao_bus():
 
     return stations
 
-def parse_malaga_bus():
+def parse_malaga_bus(basepath):
     # If Malaga gets more than 1 bus stop, we'll do some parsing then ;)
     station = {}
     station['city'] = 'Malaga'
@@ -125,8 +125,8 @@ def parse_malaga_bus():
 
     return [station]
 
-def parse_london_bus():
-    with open('data/bus/bus-stops.csv') as f:
+def parse_london_bus(basepath):
+    with open(basepath + 'bus/bus-stops.csv') as f:
         reader = csv.reader(f, delimiter=',')
 
         stations = []
@@ -148,7 +148,7 @@ def parse_london_bus():
 
     return stations
 
-def parse_bus():
+def parse_bus(mongo_uri, basepath):
     station_parsers = [
         ['Madrid', parse_madrid_bus],
         ['Barcelona', parse_bcn_bus],
@@ -157,12 +157,12 @@ def parse_bus():
         ['Bilbao', parse_bilbao_bus],
         ['London', parse_london_bus],
     ]
-    client = pymongo.MongoClient()
+    client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     bus = db.bus
 
     for parser in station_parsers:
-        stations = parser[1]()
+        stations = parser[1](basepath)
         count = 0
         for s in stations:
             res = bus.update({'loc' : s['loc']}, s, upsert=True)
@@ -173,17 +173,21 @@ def parse_bus():
 
     client.disconnect()
 
-def drop_and_recreate():
-    client = pymongo.MongoClient()
+def drop_and_recreate(mongo_uri):
+    client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     db.drop_collection('bus')
     client.disconnect()
 
-    client = pymongo.MongoClient()
+    client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     db.bus.ensure_index([('loc', pymongo.GEOSPHERE)])
     client.disconnect()
 
 if __name__ == "__main__":
-    drop_and_recreate()
-    parse_bus()
+    from lib import get_mongo_config, get_basepath
+    mongo_uri = get_mongo_config()
+    basepath = get_basepath()
+
+    drop_and_recreate(mongo_uri)
+    parse_bus(mongo_uri, basepath)
