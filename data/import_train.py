@@ -6,8 +6,8 @@ from lxml import etree
 from pykml import parser
 import simplejson as json
 
-def parse_madrid_train():
-    with open('data/train/Cercanias.kml', 'rb') as x:
+def parse_madrid_train(basepath):
+    with open(basepath + 'train/Cercanias.kml', 'rb') as x:
         xml = etree.parse(x)
     k = parser.fromstring(etree.tostring(xml))
     places = (k.findall('.//{http://www.opengis.net/kml/2.2}Placemark'))
@@ -30,11 +30,11 @@ def parse_madrid_train():
 
     return stations
 
-def parse_bcn_train():
-    files = ['data/train/FGC_EST.kml', 'data/train/RENFE_EST.kml']
+def parse_bcn_train(basepath):
+    files = ['train/FGC_EST.kml', 'train/RENFE_EST.kml']
     places = []
     for f in files:
-        with open(f, 'rb') as x:
+        with open(basepath + f, 'rb') as x:
             xml = etree.parse(x)
         k = parser.fromstring(etree.tostring(xml))
         places.extend(k.findall('.//{http://www.opengis.net/kml/2.2}Placemark'))
@@ -60,8 +60,8 @@ def parse_bcn_train():
 
     return stations
 
-def parse_zaragoza_train():
-    json_data = open('data/train/Paradas_Tranviawgs84.json').read()
+def parse_zaragoza_train(basepath):
+    json_data = open(basepath + 'train/Paradas_Tranviawgs84.json').read()
     data = json.loads(json_data)
 
     stations = []
@@ -75,8 +75,8 @@ def parse_zaragoza_train():
 
     return stations
 
-def parse_bilbao_train():
-    with open('data/train/stops.txt') as f:
+def parse_bilbao_train(basepath):
+    with open(basepath + 'train/stops.txt') as f:
         reader = csv.reader(f, delimiter=',')
 
         stations = []
@@ -97,19 +97,19 @@ def parse_bilbao_train():
 
     return stations
 
-def parse_train():
+def parse_train(mongo_uri, basepath):
     station_parsers = [
         ['Madrid', parse_madrid_train],
         ['Barcelona', parse_bcn_train],
         ['Zaragoza', parse_zaragoza_train],
         ['Bilbao', parse_bilbao_train],
     ]
-    client = pymongo.MongoClient()
+    client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     train = db.train
 
     for parser in station_parsers:
-        stations = parser[1]()
+        stations = parser[1](basepath)
         count = 0
         for s in stations:
             res = train.update({'loc' : s['loc']}, s, upsert=True)
@@ -120,17 +120,21 @@ def parse_train():
 
     client.disconnect()
 
-def drop_and_recreate():
-    client = pymongo.MongoClient()
+def drop_and_recreate(mongo_uri):
+    client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     db.drop_collection('train')
     client.disconnect()
 
-    client = pymongo.MongoClient()
+    client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     db.train.ensure_index([('loc', pymongo.GEOSPHERE)])
     client.disconnect()
 
 if __name__ == "__main__":
-    drop_and_recreate()
-    parse_train()
+    from lib import get_mongo_config, get_basepath
+    mongo_uri = get_mongo_config()
+    basepath = get_basepath()
+
+    drop_and_recreate(mongo_uri)
+    parse_train(mongo_uri, basepath)
