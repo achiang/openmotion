@@ -5,8 +5,8 @@ import pymongo
 from lxml import etree
 from pykml import parser
 
-def parse_london_metro():
-    with open('data/metro/stations.kml', 'rb') as x:
+def parse_london_metro(basepath):
+    with open(basepath + 'metro/stations.kml', 'rb') as x:
         xml = etree.parse(x)
     k = parser.fromstring(etree.tostring(xml))
     places = (k.findall('.//{http://www.opengis.net/kml/2.2}Placemark'))
@@ -28,16 +28,15 @@ def parse_london_metro():
         loc['coordinates'] = coords
         station['loc'] = loc
 
-        print(station)
         stations.append(station)
 
     return stations
 
-def parse_madrid_metro():
-    files = ['data/metro/Metro.kml', 'data/metro/MetroLigero.kml']
+def parse_madrid_metro(basepath):
+    files = ['metro/Metro.kml', 'metro/MetroLigero.kml']
     places = []
     for f in files:
-        with open(f, 'rb') as x:
+        with open(basepath + f, 'rb') as x:
             xml = etree.parse(x)
         k = parser.fromstring(etree.tostring(xml))
         places.extend(k.findall('.//{http://www.opengis.net/kml/2.2}Placemark'))
@@ -60,11 +59,11 @@ def parse_madrid_metro():
 
     return stations
 
-def parse_bcn_metro():
-    files = ['data/metro/TMB_EST.kml', 'data/metro/TRAM_EST.kml']
+def parse_bcn_metro(basepath):
+    files = ['metro/TMB_EST.kml', 'metro/TRAM_EST.kml']
     places = []
     for f in files:
-        with open(f, 'rb') as x:
+        with open(basepath + f, 'rb') as x:
             xml = etree.parse(x)
         k = parser.fromstring(etree.tostring(xml))
         places.extend(k.findall('.//{http://www.opengis.net/kml/2.2}Placemark'))
@@ -90,8 +89,8 @@ def parse_bcn_metro():
 
     return stations
 
-def parse_bilbao_metro():
-    with open('data/metro/stops.txt') as f:
+def parse_bilbao_metro(basepath):
+    with open(basepath + 'metro/stops.txt') as f:
         reader = csv.reader(f, delimiter=',')
 
         stations = []
@@ -112,19 +111,19 @@ def parse_bilbao_metro():
 
     return stations
 
-def parse_metro():
+def parse_metro(mongo_uri, basepath):
     station_parsers = [
         ['Madrid', parse_madrid_metro],
         ['Barcelona', parse_bcn_metro],
         ['Bilbao', parse_bilbao_metro],
         ['London', parse_london_metro],
     ]
-    client = pymongo.MongoClient()
+    client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     metro = db.metro
 
     for parser in station_parsers:
-        stations = parser[1]()
+        stations = parser[1](basepath)
         count = 0
         for s in stations:
             res = metro.update({'loc' : s['loc']}, s, upsert=True)
@@ -135,17 +134,21 @@ def parse_metro():
 
     client.disconnect()
 
-def drop_and_recreate():
-    client = pymongo.MongoClient()
+def drop_and_recreate(mongo_uri):
+    client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     db.drop_collection('metro')
     client.disconnect()
 
-    client = pymongo.MongoClient()
+    client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     db.metro.ensure_index([('loc', pymongo.GEOSPHERE)])
     client.disconnect()
 
 if __name__ == "__main__":
-    drop_and_recreate()
-    parse_metro()
+    from lib import get_mongo_config, get_basepath
+    mongo_uri = get_mongo_config()
+    basepath = get_basepath()
+
+    drop_and_recreate(mongo_uri)
+    parse_metro(mongo_uri, basepath)
