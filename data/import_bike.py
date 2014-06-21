@@ -6,9 +6,7 @@ import pymongo
 import simplejson as json
 from lxml import etree
 
-basepath = os.path.dirname(os.path.realpath(__file__)) + '/'
-
-def parse_london_bikes():
+def parse_london_bikes(basepath):
     tree = etree.parse(basepath + 'bike/livecyclehireupdates.xml')
     root = tree.getroot()
 
@@ -38,7 +36,7 @@ def parse_london_bikes():
 
     return stations
 
-def parse_bcn_bikes():
+def parse_bcn_bikes(basepath):
     tree = etree.parse(basepath + 'bike/bcnbicing.xml')
     root = tree.getroot()
 
@@ -77,7 +75,7 @@ def parse_bcn_bikes():
 
     return stations
 
-def parse_valencia_bikes():
+def parse_valencia_bikes(basepath):
     json_data = open(basepath + 'bike/Valenbisi.JSON').read()
     data = json.loads(json_data)
 
@@ -96,7 +94,7 @@ def parse_valencia_bikes():
 
     return stations
 
-def parse_zaragoza_bikes():
+def parse_zaragoza_bikes(basepath):
     json_data = open(basepath + 'bike/zaragoza.json').read()
     data = json.loads(json_data)
 
@@ -116,7 +114,7 @@ def parse_zaragoza_bikes():
 
     return stations
 
-def parse_malaga_bikes():
+def parse_malaga_bikes(basepath):
     stations = []
     with open(basepath + 'bike/Estacionamientos.csv') as f:
         reader = csv.reader(f, delimiter=',')
@@ -138,7 +136,7 @@ def parse_malaga_bikes():
 
     return stations
 
-def parse_bikes(mongo_uri):
+def parse_bikes(mongo_uri, basepath):
     station_parsers = [
         ['London', parse_london_bikes],
         ['Barcelona', parse_bcn_bikes],
@@ -152,7 +150,7 @@ def parse_bikes(mongo_uri):
     bikes = db.bike
 
     for parser in station_parsers:
-        stations = parser[1]()
+        stations = parser[1](basepath)
         count = 0
         for s in stations:
             res = bikes.update({'city': s['city'],
@@ -178,17 +176,10 @@ def drop_and_recreate(mongo_uri):
                            ('station_id', pymongo.ASCENDING)], unique=True)
     client.disconnect()
 
-def get_mongo_config():
-    with open(basepath + '../config/config.js') as f:
-        for line in f:
-            if 'mongo_host' in line:
-                mongo_host = line.split(':')[-1].strip().replace("\"", "")
-            if 'mongo_port' in line:
-                mongo_port = line.split(':')[-1].strip()
-
-    return 'mongodb://' + mongo_host + ':' + mongo_port + '/'
-
 if __name__ == "__main__":
+    from lib import get_mongo_config, get_basepath
     mongo_uri = get_mongo_config()
+    basepath = get_basepath()
+
     drop_and_recreate(mongo_uri)
-    parse_bikes(mongo_uri)
+    parse_bikes(mongo_uri, basepath)
