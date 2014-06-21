@@ -147,15 +147,13 @@ def parse_bikes(mongo_uri, basepath):
 
     client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
-    bikes = db.bike
+    bike = db.bike
 
     for parser in station_parsers:
         stations = parser[1](basepath)
         count = 0
         for s in stations:
-            res = bikes.update({'city': s['city'],
-                                'station_id' : s['station_id']},
-                                s, upsert=True)
+            res = bike.update({'loc' : s['loc']}, s, upsert=True)
 
             if res['updatedExisting'] == False:
                 count = count + 1
@@ -172,8 +170,6 @@ def drop_and_recreate(mongo_uri):
     client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     db.bike.ensure_index([('loc', pymongo.GEOSPHERE)])
-    db.bike.ensure_index([('city', pymongo.ASCENDING),
-                           ('station_id', pymongo.ASCENDING)], unique=True)
     client.disconnect()
 
 if __name__ == "__main__":
