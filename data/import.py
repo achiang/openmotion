@@ -12,4 +12,7 @@ if __name__ == "__main__":
 
     modules = map(__import__, transports)
     for m in modules:
+        print("Importing", m.__name__)
+        print("==========" + "=" * len(m.__name__))
         m.do_import(mongo_uri, basepath)
+        print("")
