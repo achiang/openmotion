@@ -7,7 +7,7 @@ from lxml import etree
 from pykml import parser
 
 def parse_madrid_bus(basepath):
-    files = ['bus/EMT.kml', 'bus/Interurbanos.kml']
+    files = ['buses/EMT.kml', 'buses/Interurbanos.kml']
     places = []
     for f in files:
         with open(basepath + f, 'rb') as x:
@@ -34,7 +34,7 @@ def parse_madrid_bus(basepath):
     return stations
 
 def parse_bcn_bus(basepath):
-    with open(basepath + 'bus/BUS_EST.kml', 'rb') as f:
+    with open(basepath + 'buses/BUS_EST.kml', 'rb') as f:
         xml = etree.parse(f)
 
     k = parser.fromstring(etree.tostring(xml))
@@ -62,7 +62,7 @@ def parse_bcn_bus(basepath):
     return stations
 
 def parse_valencia_bus(basepath):
-    with open(basepath + 'bus/Emt_paradas.KML', 'rb') as f:
+    with open(basepath + 'buses/Emt_paradas.KML', 'rb') as f:
         xml = etree.parse(f)
 
     k = parser.fromstring(etree.tostring(xml))
@@ -91,7 +91,7 @@ def parse_valencia_bus(basepath):
     return stations
 
 def parse_bilbao_bus(basepath):
-    with open(basepath + 'bus/stops.txt') as f:
+    with open(basepath + 'buses/stops.txt') as f:
         reader = csv.reader(f, delimiter=',')
 
         stations = []
@@ -126,7 +126,7 @@ def parse_malaga_bus(basepath):
     return [station]
 
 def parse_london_bus(basepath):
-    with open(basepath + 'bus/bus-stops.csv') as f:
+    with open(basepath + 'buses/bus-stops.csv') as f:
         reader = csv.reader(f, delimiter=',')
 
         stations = []

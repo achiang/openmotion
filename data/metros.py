@@ -6,7 +6,7 @@ from lxml import etree
 from pykml import parser
 
 def parse_london_metro(basepath):
-    with open(basepath + 'metro/stations.kml', 'rb') as x:
+    with open(basepath + 'metros/stations.kml', 'rb') as x:
         xml = etree.parse(x)
     k = parser.fromstring(etree.tostring(xml))
     places = (k.findall('.//{http://www.opengis.net/kml/2.2}Placemark'))
@@ -33,7 +33,7 @@ def parse_london_metro(basepath):
     return stations
 
 def parse_madrid_metro(basepath):
-    files = ['metro/Metro.kml', 'metro/MetroLigero.kml']
+    files = ['metros/Metro.kml', 'metros/MetroLigero.kml']
     places = []
     for f in files:
         with open(basepath + f, 'rb') as x:
@@ -60,7 +60,7 @@ def parse_madrid_metro(basepath):
     return stations
 
 def parse_bcn_metro(basepath):
-    files = ['metro/TMB_EST.kml', 'metro/TRAM_EST.kml']
+    files = ['metros/TMB_EST.kml', 'metros/TRAM_EST.kml']
     places = []
     for f in files:
         with open(basepath + f, 'rb') as x:
@@ -90,7 +90,7 @@ def parse_bcn_metro(basepath):
     return stations
 
 def parse_bilbao_metro(basepath):
-    with open(basepath + 'metro/stops.txt') as f:
+    with open(basepath + 'metros/stops.txt') as f:
         reader = csv.reader(f, delimiter=',')
 
         stations = []

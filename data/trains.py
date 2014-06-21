@@ -7,7 +7,7 @@ from pykml import parser
 import simplejson as json
 
 def parse_madrid_train(basepath):
-    with open(basepath + 'train/Cercanias.kml', 'rb') as x:
+    with open(basepath + 'trains/Cercanias.kml', 'rb') as x:
         xml = etree.parse(x)
     k = parser.fromstring(etree.tostring(xml))
     places = (k.findall('.//{http://www.opengis.net/kml/2.2}Placemark'))
@@ -31,7 +31,7 @@ def parse_madrid_train(basepath):
     return stations
 
 def parse_bcn_train(basepath):
-    files = ['train/FGC_EST.kml', 'train/RENFE_EST.kml']
+    files = ['trains/FGC_EST.kml', 'trains/RENFE_EST.kml']
     places = []
     for f in files:
         with open(basepath + f, 'rb') as x:
@@ -61,7 +61,7 @@ def parse_bcn_train(basepath):
     return stations
 
 def parse_zaragoza_train(basepath):
-    json_data = open(basepath + 'train/Paradas_Tranviawgs84.json').read()
+    json_data = open(basepath + 'trains/Paradas_Tranviawgs84.json').read()
     data = json.loads(json_data)
 
     stations = []
@@ -76,7 +76,7 @@ def parse_zaragoza_train(basepath):
     return stations
 
 def parse_bilbao_train(basepath):
-    with open(basepath + 'train/stops.txt') as f:
+    with open(basepath + 'trains/stops.txt') as f:
         reader = csv.reader(f, delimiter=',')
 
         stations = []
