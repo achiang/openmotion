@@ -120,21 +120,10 @@ def parse_train(mongo_uri, basepath):
 
     client.disconnect()
 
-def drop_and_recreate(mongo_uri):
-    client = pymongo.MongoClient(mongo_uri)
-    db = client.openmotion
-    db.drop_collection('train')
-    client.disconnect()
-
-    client = pymongo.MongoClient(mongo_uri)
-    db = client.openmotion
-    db.train.ensure_index([('loc', pymongo.GEOSPHERE)])
-    client.disconnect()
-
 if __name__ == "__main__":
-    from lib import get_mongo_config, get_basepath
+    from lib import get_mongo_config, get_basepath, drop_and_recreate
     mongo_uri = get_mongo_config()
     basepath = get_basepath()
 
-    drop_and_recreate(mongo_uri)
+    drop_and_recreate(mongo_uri, 'train')
     parse_train(mongo_uri, basepath)
