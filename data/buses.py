@@ -148,7 +148,7 @@ def parse_london_bus(basepath):
 
     return stations
 
-def parse_bus(mongo_uri, basepath):
+def do_import(mongo_uri, basepath):
     station_parsers = [
         ['Madrid', parse_madrid_bus],
         ['Barcelona', parse_bcn_bus],
@@ -159,13 +159,13 @@ def parse_bus(mongo_uri, basepath):
     ]
     client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
-    bus = db.bus
+    buses = db.buses
 
     for parser in station_parsers:
         stations = parser[1](basepath)
         count = 0
         for s in stations:
-            res = bus.update({'loc' : s['loc']}, s, upsert=True)
+            res = buses.update({'loc' : s['loc']}, s, upsert=True)
 
             if res['updatedExisting'] == False:
                 count = count + 1
@@ -178,5 +178,5 @@ if __name__ == "__main__":
     mongo_uri = get_mongo_config()
     basepath = get_basepath()
 
-    drop_and_recreate(mongo_uri, 'bus')
+    drop_and_recreate(mongo_uri, 'buses')
     parse_bus(mongo_uri, basepath)

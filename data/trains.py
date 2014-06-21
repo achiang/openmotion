@@ -97,7 +97,7 @@ def parse_bilbao_train(basepath):
 
     return stations
 
-def parse_train(mongo_uri, basepath):
+def do_import(mongo_uri, basepath):
     station_parsers = [
         ['Madrid', parse_madrid_train],
         ['Barcelona', parse_bcn_train],
@@ -106,13 +106,13 @@ def parse_train(mongo_uri, basepath):
     ]
     client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
-    train = db.train
+    trains = db.trains
 
     for parser in station_parsers:
         stations = parser[1](basepath)
         count = 0
         for s in stations:
-            res = train.update({'loc' : s['loc']}, s, upsert=True)
+            res = trains.update({'loc' : s['loc']}, s, upsert=True)
 
             if res['updatedExisting'] == False:
                 count = count + 1
@@ -125,5 +125,5 @@ if __name__ == "__main__":
     mongo_uri = get_mongo_config()
     basepath = get_basepath()
 
-    drop_and_recreate(mongo_uri, 'train')
-    parse_train(mongo_uri, basepath)
+    drop_and_recreate(mongo_uri, 'trains')
+    do_import(mongo_uri, basepath)

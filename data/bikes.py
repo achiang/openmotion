@@ -136,7 +136,7 @@ def parse_malaga_bikes(basepath):
 
     return stations
 
-def parse_bikes(mongo_uri, basepath):
+def do_import(mongo_uri, basepath):
     station_parsers = [
         ['London', parse_london_bikes],
         ['Barcelona', parse_bcn_bikes],
@@ -167,4 +167,4 @@ if __name__ == "__main__":
     basepath = get_basepath()
 
     drop_and_recreate(mongo_uri, 'bikes')
-    parse_bikes(mongo_uri, basepath)
+    do_import(mongo_uri, basepath)

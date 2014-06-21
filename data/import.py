@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
 
-from lib import get_mongo_config, get_basepath
-
-import import_bike
-import import_bus
+from lib import get_mongo_config, get_basepath, drop_and_recreate
 
 if __name__ == "__main__":
     mongo_uri = get_mongo_config()
     basepath = get_basepath()
 
-    import_bike.drop_and_recreate(mongo_uri)
-    import_bus.drop_and_recreate(mongo_uri)
+    transports = ['bikes', 'metros', 'trains', 'buses']
+    for t in transports:
+        drop_and_recreate(mongo_uri, t)
 
-    import_bike.parse_bikes(mongo_uri, basepath)
-    import_bike.parse_bus(mongo_uri, basepath)
+    modules = map(__import__, transports)
+    for m in modules:
+        m.do_import(mongo_uri, basepath)

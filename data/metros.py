@@ -111,7 +111,7 @@ def parse_bilbao_metro(basepath):
 
     return stations
 
-def parse_metro(mongo_uri, basepath):
+def do_import(mongo_uri, basepath):
     station_parsers = [
         ['Madrid', parse_madrid_metro],
         ['Barcelona', parse_bcn_metro],
@@ -120,13 +120,13 @@ def parse_metro(mongo_uri, basepath):
     ]
     client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
-    metro = db.metro
+    metros = db.metros
 
     for parser in station_parsers:
         stations = parser[1](basepath)
         count = 0
         for s in stations:
-            res = metro.update({'loc' : s['loc']}, s, upsert=True)
+            res = metros.update({'loc' : s['loc']}, s, upsert=True)
 
             if res['updatedExisting'] == False:
                 count = count + 1
@@ -139,5 +139,5 @@ if __name__ == "__main__":
     mongo_uri = get_mongo_config()
     basepath = get_basepath()
 
-    drop_and_recreate(mongo_uri, 'metro')
-    parse_metro(mongo_uri, basepath)
+    drop_and_recreate(mongo_uri, 'metros')
+    do_import(mongo_uri, basepath)
