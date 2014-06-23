@@ -1,0 +1,9 @@
+#!/bin/sh
+
+export LANG=en_US.UTF-8
+
+install_root=`config-get install_root`
+app_name=`config-get app_name`
+app_dir="$install_root/$app_name"
+
+python3 $app_dir/data/import.py
