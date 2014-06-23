@@ -2,6 +2,10 @@
 
 set -eu 
 
+export LANG=en_US.UTF-8
+
+hook=$(basename ${BASH_SOURCE[0]})
+
 # Get the database settings; if not set, wait for this hook to be
 # invoked again
 host=`relation-get private-address`
@@ -44,6 +48,12 @@ EOF
   open-port $app_port/TCP
 }
 configure_app
+
+if [ $hook == "mongodb-relation-joined" ]; then
+    juju-log "mongodb-relation-joined: importing data now"
+    python3 $app_dir/data/import.py
+    juju-log "mongodb-relation-joined: done importing data"
+fi
 
 juju-log "(re)starting app"
 service ${app_name} restart || service ${app_name} start
