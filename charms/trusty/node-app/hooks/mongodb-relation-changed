@@ -5,6 +5,7 @@ set -eu
 export LANG=en_US.UTF-8
 
 hook=$(basename ${BASH_SOURCE[0]})
+juju-log "detected hook as: $hook"
 
 # Get the database settings; if not set, wait for this hook to be
 # invoked again
