@@ -2,6 +2,8 @@
 
 set -eu 
 
+export LANG=en_US.UTF-8
+
 # Get the database settings; if not set, wait for this hook to be
 # invoked again
 host=`relation-get private-address`
