@@ -23,9 +23,17 @@ server.listen(config.listen_port, function() {
     console.log('%s listening at %s', server.name, server.url);
 });
 
+server.get('/:ver/:mode/:lat/:lng', function(req, res, next) {
+    next(req.params.ver + req.params.mode);
+});
+
 mongoose.model('Bike', BikeSchema);
 var Bike = mongoose.model('Bike');
-server.get('/bike/:lat/:lng', function (req, res, next) {
+
+server.get({
+    name: 'v1bikes',
+    path: '/:ver/:mode/:lat/:lng'
+}, function(req, res, next) {
     var lat = parseFloat(req.params.lat);
     var lng = parseFloat(req.params.lng);
     var point = {type: 'Point', coordinates: [lng, lat]};
