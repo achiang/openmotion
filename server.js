@@ -1,19 +1,7 @@
 var config = require('./config/config');
+var models = require('./models');
 var restify = require('restify');
-var mongoose = require('mongoose');
 var server = restify.createServer({name: config.name});
-
-var mongo_uri = 'mongodb://' + config.mongo_host + ':' + config.mongo_port;
-mongo_uri += '/' + config.name;
-mongoose.connect(mongo_uri);
-
-var Schema = mongoose.Schema;
-var BikeSchema = new Schema({
-    name: String,
-    station_id: String,
-    loc: { type: {}, index: '2dsphere' },
-    city: String
-});
 
 server
     .use(restify.fullResponse())
@@ -24,29 +12,33 @@ server.listen(config.listen_port, function() {
     console.log('%s listening at %s', server.name, server.url);
 });
 
-server.get('/:ver/:mode', function(req, res, next) {
-    next(req.params.ver + req.params.mode);
-});
-
-mongoose.model('Bike', BikeSchema);
-var Bike = mongoose.model('Bike');
-
-server.get({
-    name: 'v1bikes',
-    path: '/:ver/:mode'
-}, function(req, res, next) {
+server.get(/v1\/(bikes|buses|trains|metros)/, function(req, res, next) {
     var lat = parseFloat(req.query.lat);
     var lng = parseFloat(req.query.lng);
+    var point = {type: 'Point', coordinates: [lng, lat]};
 
     if (isNaN(lat) || isNaN(lng)) {
         res.send(400, "Bad or missing lat or lng parameter");
         next();
     }
 
-    var point = {type: 'Point', coordinates: [lng, lat]};
+    switch (req.params[0]) {
+        case "bikes":
+            var model = models.Bike;
+            break;
+        case "buses":
+            var model = models.Bus;
+            break;
+        case "trains":
+            var model = models.Train;
+            break;
+        case "metros":
+            var model = models.Metro;
+            break;
+    }
 
     // http://stackoverflow.com/q/22623998/
-    Bike.geoNear(point, { maxDistance: 100/6378137, spherical: true }
+    model.geoNear(point, { maxDistance: 100/6378137, spherical: true }
         , function (err, data) {
             if (err)
                 return next(new restify.InvalidArgumentError(err.errmsg));
