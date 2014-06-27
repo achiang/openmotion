@@ -5,7 +5,6 @@ var server = restify.createServer({name: config.name});
 
 var mongo_uri = 'mongodb://' + config.mongo_host + ':' + config.mongo_port;
 mongo_uri += '/' + config.name;
-console.log(mongo_uri);
 mongoose.connect(mongo_uri);
 
 var Schema = mongoose.Schema;
