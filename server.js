@@ -17,13 +17,14 @@ var BikeSchema = new Schema({
 
 server
     .use(restify.fullResponse())
+    .use(restify.queryParser())
     .use(restify.bodyParser());
 
 server.listen(config.listen_port, function() {
     console.log('%s listening at %s', server.name, server.url);
 });
 
-server.get('/:ver/:mode/:lat/:lng', function(req, res, next) {
+server.get('/:ver/:mode', function(req, res, next) {
     next(req.params.ver + req.params.mode);
 });
 
@@ -32,10 +33,16 @@ var Bike = mongoose.model('Bike');
 
 server.get({
     name: 'v1bikes',
-    path: '/:ver/:mode/:lat/:lng'
+    path: '/:ver/:mode'
 }, function(req, res, next) {
-    var lat = parseFloat(req.params.lat);
-    var lng = parseFloat(req.params.lng);
+    var lat = parseFloat(req.query.lat);
+    var lng = parseFloat(req.query.lng);
+
+    if (isNaN(lat) || isNaN(lng)) {
+        res.send(400, "Bad or missing lat or lng parameter");
+        next();
+    }
+
     var point = {type: 'Point', coordinates: [lng, lat]};
 
     // http://stackoverflow.com/q/22623998/
