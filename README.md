@@ -44,6 +44,10 @@ After it has been deployed, you can test with curl:
 
     [{"dis":0.000011878864177520727,"obj":{"city":"Barcelona","loc":{"type":"Point","coordinates":[2.22290444983689,41.4304584678793]},"name":"Encants de Sant Adrià","_id":"53a4df430e6b8a5afd2ad819"}}]
 
+    curl -i "http://localhost:3000/v1/all?lat=36.713&lng=-4.434"
+
+    [{"dis":0.000015034127618083719,"obj":{"city":"Malaga","station_id":"14","name":"Estación de Autobuses","mode":"bike","loc":{"coordinates":[-4.432968,36.71276],"type":"Point"},"_id":"53b2e641e543ca467c0cae57"}},{"dis":0.0000030872115924425577,"obj":{"city":"Malaga","name":"Paseo de los Tilos","mode":"bus","loc":{"coordinates":[-4.4342172937,36.7130306843],"type":"Point"},"_id":"53b2e69ee543ca467c0ce214"}}]
+
 misc notes
 ==========
 

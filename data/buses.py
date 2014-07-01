@@ -165,6 +165,7 @@ def do_import(mongo_uri, basepath):
         stations = parser[1](basepath)
         count = 0
         for s in stations:
+            s['mode'] = 'bus'
             res = buses.update({'loc' : s['loc']}, s, upsert=True)
 
             if res['updatedExisting'] == False:
