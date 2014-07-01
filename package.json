@@ -4,6 +4,8 @@
     , "dependencies": {
         "mongoose": "*"
         , "restify": "*"
+        , "async": "*"
+        , "inflection": "*"
     }
     , "repository" : {
         "type" :  "git"
