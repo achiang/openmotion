@@ -2,6 +2,7 @@
 
 import bng
 import csv
+import simplejson as json
 import pymongo
 from lxml import etree
 from pykml import parser
@@ -148,6 +149,16 @@ def parse_london_bus(basepath):
 
     return stations
 
+def parse_uk_bus(basepath):
+    json_data = open(basepath + 'buses/UK.json').read()
+    data = json.loads(json_data)
+
+    stations = []
+    for d in data:
+        stations.append(d)
+
+    return stations
+
 def do_import(mongo_uri, basepath):
     station_parsers = [
         ['Madrid', parse_madrid_bus],
@@ -156,13 +167,13 @@ def do_import(mongo_uri, basepath):
         ['Malaga', parse_malaga_bus],
         ['Bilbao', parse_bilbao_bus],
         ['London', parse_london_bus],
+        ['UK', parse_uk_bus],
     ]
     client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     buses = db.buses
 
-    for parser in station_parsers:
-        stations = parser[1](basepath)
+    def upsert_stations(geo, stations):
         count = 0
         for s in stations:
             s['mode'] = 'bus'
@@ -170,7 +181,16 @@ def do_import(mongo_uri, basepath):
 
             if res['updatedExisting'] == False:
                 count = count + 1
-        print(parser[0], "inserted", count, "new records.")
+        print(geo, "inserted", count, "new records.")
+
+    for parser in station_parsers:
+        stations = parser[1](basepath)
+        if len(stations) > 10000:
+            chunks = [stations[x:x+9999] for x in range(0, len(stations), 9999)]
+            for c in chunks:
+                upsert_stations(parser[0], c)
+        else:
+            upsert_stations(parser[0], stations)
 
     client.disconnect()
 
@@ -180,4 +200,4 @@ if __name__ == "__main__":
     basepath = get_basepath()
 
     drop_and_recreate(mongo_uri, 'buses')
-    parse_bus(mongo_uri, basepath)
+    do_import(mongo_uri, basepath)

@@ -6,6 +6,9 @@ if __name__ == "__main__":
     mongo_uri = get_mongo_config()
     basepath = get_basepath()
 
+    import countries
+    countries.do_import(mongo_uri, basepath)
+
     transports = ['bikes', 'metros', 'trains', 'buses']
     for t in transports:
         drop_and_recreate(mongo_uri, t)

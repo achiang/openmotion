@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import csv
+import simplejson as json
 import pymongo
 from lxml import etree
 from pykml import parser
@@ -29,6 +30,16 @@ def parse_london_metro(basepath):
         station['loc'] = loc
 
         stations.append(station)
+
+    return stations
+
+def parse_uk_metro(basepath):
+    json_data = open(basepath + 'metros/UK.json').read()
+    data = json.loads(json_data)
+
+    stations = []
+    for d in data:
+        stations.append(d)
 
     return stations
 
@@ -117,6 +128,7 @@ def do_import(mongo_uri, basepath):
         ['Barcelona', parse_bcn_metro],
         ['Bilbao', parse_bilbao_metro],
         ['London', parse_london_metro],
+        ['UK', parse_uk_metro],
     ]
     client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion

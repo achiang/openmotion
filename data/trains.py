@@ -75,6 +75,16 @@ def parse_zaragoza_train(basepath):
 
     return stations
 
+def parse_uk_train(basepath):
+    json_data = open(basepath + 'trains/UK.json').read()
+    data = json.loads(json_data)
+
+    stations = []
+    for d in data:
+        stations.append(d)
+
+    return stations
+
 def parse_bilbao_train(basepath):
     with open(basepath + 'trains/stops.txt') as f:
         reader = csv.reader(f, delimiter=',')
@@ -103,6 +113,7 @@ def do_import(mongo_uri, basepath):
         ['Barcelona', parse_bcn_train],
         ['Zaragoza', parse_zaragoza_train],
         ['Bilbao', parse_bilbao_train],
+        ['UK', parse_uk_train],
     ]
     client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
