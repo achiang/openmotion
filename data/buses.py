@@ -8,7 +8,7 @@ from lxml import etree
 from pykml import parser
 
 def parse_madrid_bus(basepath):
-    files = ['buses/EMT.kml', 'buses/Interurbanos.kml']
+    files = ['EMT.kml', 'Interurbanos.kml']
     places = []
     for f in files:
         with open(basepath + f, 'rb') as x:
@@ -35,7 +35,7 @@ def parse_madrid_bus(basepath):
     return stations
 
 def parse_bcn_bus(basepath):
-    with open(basepath + 'buses/BUS_EST.kml', 'rb') as f:
+    with open(basepath + 'BUS_EST.kml', 'rb') as f:
         xml = etree.parse(f)
 
     k = parser.fromstring(etree.tostring(xml))
@@ -63,7 +63,7 @@ def parse_bcn_bus(basepath):
     return stations
 
 def parse_valencia_bus(basepath):
-    with open(basepath + 'buses/Emt_paradas.KML', 'rb') as f:
+    with open(basepath + 'Emt_paradas.KML', 'rb') as f:
         xml = etree.parse(f)
 
     k = parser.fromstring(etree.tostring(xml))
@@ -92,7 +92,7 @@ def parse_valencia_bus(basepath):
     return stations
 
 def parse_bilbao_bus(basepath):
-    with open(basepath + 'buses/stops.txt') as f:
+    with open(basepath + 'stops.txt') as f:
         reader = csv.reader(f, delimiter=',')
 
         stations = []
@@ -127,7 +127,7 @@ def parse_malaga_bus(basepath):
     return [station]
 
 def parse_london_bus(basepath):
-    with open(basepath + 'buses/bus-stops.csv') as f:
+    with open(basepath + 'bus-stops.csv') as f:
         reader = csv.reader(f, delimiter=',')
 
         stations = []
@@ -150,7 +150,7 @@ def parse_london_bus(basepath):
     return stations
 
 def parse_uk_bus(basepath):
-    json_data = open(basepath + 'buses/UK.json').read()
+    json_data = open(basepath + 'UK.json').read()
     data = json.loads(json_data)
 
     stations = []
@@ -195,9 +195,11 @@ def do_import(mongo_uri, basepath):
     client.disconnect()
 
 if __name__ == "__main__":
-    from lib import get_mongo_config, get_basepath, drop_and_recreate
+    from lib import get_mongo_config, get_basepath, mongo_drop, mongo_index
+    mode = 'buses'
     mongo_uri = get_mongo_config()
-    basepath = get_basepath()
+    basepath = get_basepath() + mode + '/'
 
-    drop_and_recreate(mongo_uri, 'buses')
+    mongo_drop(mongo_uri, mode)
     do_import(mongo_uri, basepath)
+    mongo_index(mongo_uri, mode)
