@@ -44,14 +44,18 @@ def get_mongo_config():
 
     return 'mongodb://' + mongo_host + ':' + mongo_port + '/'
 
-def drop_and_recreate(mongo_uri, collection):
+def mongo_drop(mongo_uri, collection):
     client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     db.drop_collection(collection)
     client.disconnect()
 
+def mongo_index(mongo_uri, collection):
     client = pymongo.MongoClient(mongo_uri)
     db = client.openmotion
     db.collection.ensure_index([('loc', pymongo.GEOSPHERE)])
     client.disconnect()
 
+def drop_and_recreate(mongo_uri, collection):
+    mongo_drop(mongo_uri, collection)
+    mongo_index(mongo_uri, collection)
