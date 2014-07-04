@@ -146,14 +146,7 @@ def do_import(mongo_uri, basepath):
     bikes = db.bikes
 
     for parser in station_parsers:
-        stations = parser[1](basepath)
-        count = 0
-        for s in stations:
-            res = bikes.update({'loc' : s['loc']}, s, upsert=True)
-
-            if res['updatedExisting'] == False:
-                count = count + 1
-        print(parser[0], "inserted", count, "new records.")
+        bikes.insert(parser[1](basepath))
 
     client.disconnect()
 
