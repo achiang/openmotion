@@ -15,14 +15,13 @@ def parse_madrid_train(basepath):
     stations = []
     count = 0
     for p in places:
-        station = {}
+        station = { 'mode' : 'train' }
         station['city'] = 'Madrid'
         station['name'] = p.name.text
 
         coords = [float(c.strip()) for c in p.Point.coordinates.text.split(',')]
 
-        loc = {}
-        loc['type'] = 'Point'
+        loc = { 'type' : 'Point' }
         loc['coordinates'] = coords
         station['loc'] = loc
 
@@ -42,7 +41,7 @@ def parse_bcn_train(basepath):
     stations = []
     count = 0
     for p in places:
-        station = {}
+        station = { 'mode' : 'train' }
         station['city'] = 'Barcelona'
         station['name'] = p.name.text
 
@@ -51,8 +50,7 @@ def parse_bcn_train(basepath):
         # BCN inserts a trailing 0 coordinate? Why!?
         coords.pop()
 
-        loc = {}
-        loc['type'] = 'Point'
+        loc = { 'type' : 'Point' }
         loc['coordinates'] = coords
         station['loc'] = loc
 
@@ -66,7 +64,7 @@ def parse_zaragoza_train(basepath):
 
     stations = []
     for d in data['features']:
-        station = {}
+        station = { 'mode' : 'train' }
         station['city'] = 'Zaragoza'
         station['name'] = d['properties']['NOMBRE']
         station['loc'] = d['geometry']
@@ -94,12 +92,11 @@ def parse_bilbao_train(basepath):
             if row[0] == "stop_id":
                 continue
 
-            station = {}
+            station = { 'mode' : 'train' }
             station['city'] = 'Bilbao'
             station['name'] = row[2]            # stop_name
 
-            loc = {}
-            loc['type'] = 'Point'
+            loc = { 'type' : 'Point' }
             loc['coordinates'] = [ float(row[5]), float(row[4]) ]
             station['loc'] = loc
 
@@ -123,7 +120,6 @@ def do_import(mongo_uri, basepath):
         stations = parser[1](basepath)
         count = 0
         for s in stations:
-            s['mode'] = 'train'
             res = trains.update({'loc' : s['loc']}, s, upsert=True)
 
             if res['updatedExisting'] == False:
