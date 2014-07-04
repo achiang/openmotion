@@ -15,7 +15,7 @@ def parse_london_metro(basepath):
     stations = []
     count = 0
     for p in places:
-        station = {}
+        station = { 'mode' : 'metro' }
         station['city'] = 'London'
         station['name'] = p.name.text.strip()
 
@@ -24,8 +24,7 @@ def parse_london_metro(basepath):
         # London inserts a trailing 0 coordinate too? Why!?
         coords.pop()
 
-        loc = {}
-        loc['type'] = 'Point'
+        loc = { 'type' : 'Point' }
         loc['coordinates'] = coords
         station['loc'] = loc
 
@@ -55,14 +54,13 @@ def parse_madrid_metro(basepath):
     stations = []
     count = 0
     for p in places:
-        station = {}
+        station = { 'mode' : 'metro' }
         station['city'] = 'Madrid'
         station['name'] = p.name.text
 
         coords = [float(c.strip()) for c in p.Point.coordinates.text.split(',')]
 
-        loc = {}
-        loc['type'] = 'Point'
+        loc = { 'type' : 'Point' }
         loc['coordinates'] = coords
         station['loc'] = loc
 
@@ -82,7 +80,7 @@ def parse_bcn_metro(basepath):
     stations = []
     count = 0
     for p in places:
-        station = {}
+        station = { 'mode' : 'metro' }
         station['city'] = 'Barcelona'
         station['name'] = p.name.text
 
@@ -91,8 +89,7 @@ def parse_bcn_metro(basepath):
         # BCN inserts a trailing 0 coordinate? Why!?
         coords.pop()
 
-        loc = {}
-        loc['type'] = 'Point'
+        loc = { 'type' : 'Point' }
         loc['coordinates'] = coords
         station['loc'] = loc
 
@@ -109,12 +106,11 @@ def parse_bilbao_metro(basepath):
             if row[0] == "stop_id":
                 continue
 
-            station = {}
+            station = { 'mode' : 'metro' }
             station['city'] = 'Bilbao'
             station['name'] = row[2]            # stop_name
 
-            loc = {}
-            loc['type'] = 'Point'
+            loc = { 'type' : 'Point' }
             loc['coordinates'] = [ float(row[4]), float(row[3]) ]
             station['loc'] = loc
 
@@ -138,7 +134,6 @@ def do_import(mongo_uri, basepath):
         stations = parser[1](basepath)
         count = 0
         for s in stations:
-            s['mode'] = 'metro'
             res = metros.update({'loc' : s['loc']}, s, upsert=True)
 
             if res['updatedExisting'] == False:
