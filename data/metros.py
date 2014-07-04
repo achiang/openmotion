@@ -7,7 +7,7 @@ from lxml import etree
 from pykml import parser
 
 def parse_london_metro(basepath):
-    with open(basepath + 'metros/stations.kml', 'rb') as x:
+    with open(basepath + 'stations.kml', 'rb') as x:
         xml = etree.parse(x)
     k = parser.fromstring(etree.tostring(xml))
     places = (k.findall('.//{http://www.opengis.net/kml/2.2}Placemark'))
@@ -34,7 +34,7 @@ def parse_london_metro(basepath):
     return stations
 
 def parse_uk_metro(basepath):
-    json_data = open(basepath + 'metros/UK.json').read()
+    json_data = open(basepath + 'UK.json').read()
     data = json.loads(json_data)
 
     stations = []
@@ -44,7 +44,7 @@ def parse_uk_metro(basepath):
     return stations
 
 def parse_madrid_metro(basepath):
-    files = ['metros/Metro.kml', 'metros/MetroLigero.kml']
+    files = ['Metro.kml', 'MetroLigero.kml']
     places = []
     for f in files:
         with open(basepath + f, 'rb') as x:
@@ -71,7 +71,7 @@ def parse_madrid_metro(basepath):
     return stations
 
 def parse_bcn_metro(basepath):
-    files = ['metros/TMB_EST.kml', 'metros/TRAM_EST.kml']
+    files = ['TMB_EST.kml', 'TRAM_EST.kml']
     places = []
     for f in files:
         with open(basepath + f, 'rb') as x:
@@ -101,7 +101,7 @@ def parse_bcn_metro(basepath):
     return stations
 
 def parse_bilbao_metro(basepath):
-    with open(basepath + 'metros/stops.txt') as f:
+    with open(basepath + 'stops.txt') as f:
         reader = csv.reader(f, delimiter=',')
 
         stations = []
@@ -148,9 +148,11 @@ def do_import(mongo_uri, basepath):
     client.disconnect()
 
 if __name__ == "__main__":
-    from lib import get_mongo_config, get_basepath, drop_and_recreate
+    from lib import get_mongo_config, get_basepath, mongo_drop, mongo_index
+    mode = 'metros'
     mongo_uri = get_mongo_config()
-    basepath = get_basepath()
+    basepath = get_basepath() + mode + '/'
 
-    drop_and_recreate(mongo_uri, 'metros')
+    mongo_drop(mongo_uri, mode)
     do_import(mongo_uri, basepath)
+    mongo_index(mongo_uri, mode)
