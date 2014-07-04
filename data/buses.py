@@ -19,7 +19,7 @@ def parse_madrid_bus(basepath):
     stations = []
     count = 0
     for p in places:
-        station = {}
+        station = { 'mode': 'bus' }
         station['city'] = 'Madrid'
         station['name'] = p.name.text
 
@@ -44,7 +44,7 @@ def parse_bcn_bus(basepath):
     stations = []
     count = 0
     for p in places:
-        station = {}
+        station = { 'mode': 'bus' }
         station['city'] = 'Barcelona'
         station['name'] = p.name.text
 
@@ -72,7 +72,7 @@ def parse_valencia_bus(basepath):
     stations = []
     count = 0
     for p in places:
-        station = {}
+        station = { 'mode': 'bus' }
         station['city'] = 'Valencia'
 
         data = p.findall('.//{http://www.opengis.net/kml/2.2}Data')
@@ -100,7 +100,7 @@ def parse_bilbao_bus(basepath):
             if row[0] == "stop_id":
                 continue
 
-            station = {}
+            station = { 'mode': 'bus' }
             station['city'] = 'Bilbao'
             station['name'] = row[2]            # stop_name
 
@@ -115,7 +115,7 @@ def parse_bilbao_bus(basepath):
 
 def parse_malaga_bus(basepath):
     # If Malaga gets more than 1 bus stop, we'll do some parsing then ;)
-    station = {}
+    station = { 'mode': 'bus' }
     station['city'] = 'Malaga'
     station['name'] = 'Paseo de los Tilos'
 
@@ -135,7 +135,7 @@ def parse_london_bus(basepath):
             if row[0] == "Stop_Code_LBSL":
                 continue
 
-            station = {}
+            station = { 'mode': 'bus' }
             station['city'] = 'London'
             station['name'] = row[3]            # Stop_Name
 
@@ -173,24 +173,8 @@ def do_import(mongo_uri, basepath):
     db = client.openmotion
     buses = db.buses
 
-    def upsert_stations(geo, stations):
-        count = 0
-        for s in stations:
-            s['mode'] = 'bus'
-            res = buses.update({'loc' : s['loc']}, s, upsert=True)
-
-            if res['updatedExisting'] == False:
-                count = count + 1
-        print(geo, "inserted", count, "new records.")
-
     for parser in station_parsers:
-        stations = parser[1](basepath)
-        if len(stations) > 10000:
-            chunks = [stations[x:x+9999] for x in range(0, len(stations), 9999)]
-            for c in chunks:
-                upsert_stations(parser[0], c)
-        else:
-            upsert_stations(parser[0], stations)
+        buses.insert(parser[1](basepath))
 
     client.disconnect()
 
