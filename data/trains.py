@@ -7,7 +7,7 @@ from pykml import parser
 import simplejson as json
 
 def parse_madrid_train(basepath):
-    with open(basepath + 'trains/Cercanias.kml', 'rb') as x:
+    with open(basepath + 'Cercanias.kml', 'rb') as x:
         xml = etree.parse(x)
     k = parser.fromstring(etree.tostring(xml))
     places = (k.findall('.//{http://www.opengis.net/kml/2.2}Placemark'))
@@ -31,7 +31,7 @@ def parse_madrid_train(basepath):
     return stations
 
 def parse_bcn_train(basepath):
-    files = ['trains/FGC_EST.kml', 'trains/RENFE_EST.kml']
+    files = ['FGC_EST.kml', 'RENFE_EST.kml']
     places = []
     for f in files:
         with open(basepath + f, 'rb') as x:
@@ -61,7 +61,7 @@ def parse_bcn_train(basepath):
     return stations
 
 def parse_zaragoza_train(basepath):
-    json_data = open(basepath + 'trains/Paradas_Tranviawgs84.json').read()
+    json_data = open(basepath + 'Paradas_Tranviawgs84.json').read()
     data = json.loads(json_data)
 
     stations = []
@@ -76,7 +76,7 @@ def parse_zaragoza_train(basepath):
     return stations
 
 def parse_uk_train(basepath):
-    json_data = open(basepath + 'trains/UK.json').read()
+    json_data = open(basepath + 'UK.json').read()
     data = json.loads(json_data)
 
     stations = []
@@ -86,7 +86,7 @@ def parse_uk_train(basepath):
     return stations
 
 def parse_bilbao_train(basepath):
-    with open(basepath + 'trains/stops.txt') as f:
+    with open(basepath + 'stops.txt') as f:
         reader = csv.reader(f, delimiter=',')
 
         stations = []
@@ -133,9 +133,11 @@ def do_import(mongo_uri, basepath):
     client.disconnect()
 
 if __name__ == "__main__":
-    from lib import get_mongo_config, get_basepath, drop_and_recreate
+    from lib import get_mongo_config, get_basepath, mongo_drop, mongo_index
+    mode = 'trains'
     mongo_uri = get_mongo_config()
-    basepath = get_basepath()
+    basepath = get_basepath() + mode + '/'
 
-    drop_and_recreate(mongo_uri, 'trains')
+    mongo_drop(mongo_uri, mode)
     do_import(mongo_uri, basepath)
+    mongo_index(mongo_uri, mode)
