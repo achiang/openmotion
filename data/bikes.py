@@ -7,7 +7,7 @@ import simplejson as json
 from lxml import etree
 
 def parse_london_bikes(basepath):
-    tree = etree.parse(basepath + 'bikes/livecyclehireupdates.xml')
+    tree = etree.parse(basepath + 'livecyclehireupdates.xml')
     root = tree.getroot()
 
     stations = []
@@ -37,7 +37,7 @@ def parse_london_bikes(basepath):
     return stations
 
 def parse_bcn_bikes(basepath):
-    tree = etree.parse(basepath + 'bikes/bcnbicing.xml')
+    tree = etree.parse(basepath + 'bcnbicing.xml')
     root = tree.getroot()
 
     stations = []
@@ -76,7 +76,7 @@ def parse_bcn_bikes(basepath):
     return stations
 
 def parse_valencia_bikes(basepath):
-    json_data = open(basepath + 'bikes/Valenbisi.JSON').read()
+    json_data = open(basepath + 'Valenbisi.JSON').read()
     data = json.loads(json_data)
 
     stations = []
@@ -95,7 +95,7 @@ def parse_valencia_bikes(basepath):
     return stations
 
 def parse_zaragoza_bikes(basepath):
-    json_data = open(basepath + 'bikes/zaragoza.json').read()
+    json_data = open(basepath + 'zaragoza.json').read()
     data = json.loads(json_data)
 
     stations = []
@@ -116,7 +116,7 @@ def parse_zaragoza_bikes(basepath):
 
 def parse_malaga_bikes(basepath):
     stations = []
-    with open(basepath + 'bikes/Estacionamientos.csv') as f:
+    with open(basepath + 'Estacionamientos.csv') as f:
         reader = csv.reader(f, delimiter=',')
         for row in reader:
             if row[0] == "ID":
@@ -163,9 +163,11 @@ def do_import(mongo_uri, basepath):
     client.disconnect()
 
 if __name__ == "__main__":
-    from lib import get_mongo_config, get_basepath, drop_and_recreate
+    from lib import get_mongo_config, get_basepath, mongo_drop, mongo_index
+    mode = 'bikes'
     mongo_uri = get_mongo_config()
-    basepath = get_basepath()
+    basepath = get_basepath() + mode + '/'
 
-    drop_and_recreate(mongo_uri, 'bikes')
+    mongo_drop(mongo_uri, mode)
     do_import(mongo_uri, basepath)
+    mongo_index(mongo_uri, mode)
