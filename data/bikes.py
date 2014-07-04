@@ -12,7 +12,7 @@ def parse_london_bikes(basepath):
 
     stations = []
     for s in root:
-        station = {}
+        station = { 'mode' : 'bike' }
         station['city'] = 'London'
         lat = ""
         lng = ""
@@ -27,8 +27,7 @@ def parse_london_bikes(basepath):
             if attr.tag == "long":
                 lng = attr.text
 
-        loc = {}
-        loc['type'] = 'Point'
+        loc = { 'type' : 'Point' }
         loc['coordinates'] = [ float(lng), float(lat) ]
         station['loc'] = loc
 
@@ -42,7 +41,7 @@ def parse_bcn_bikes(basepath):
 
     stations = []
     for s in root:
-        station = {}
+        station = { 'mode' : 'bike' }
         station['city'] = 'Barcelona'
         lat = ""
         lng = ""
@@ -64,8 +63,7 @@ def parse_bcn_bikes(basepath):
             if attr.tag == "long":
                 lng = attr.text
 
-        loc = {}
-        loc['type'] = 'Point'
+        loc = { 'type' : 'Point' }
         loc['coordinates'] = [ float(lng), float(lat) ]
         station['loc'] = loc
 
@@ -81,7 +79,7 @@ def parse_valencia_bikes(basepath):
 
     stations = []
     for f in data['features']:
-        station = {}
+        station = { 'mode' : 'bike' }
         station['city'] = 'Valencia'
         station['station_id'] = f['properties']['name']
 
@@ -100,13 +98,12 @@ def parse_zaragoza_bikes(basepath):
 
     stations = []
     for d in data['response']['docs']:
-        station = {}
+        station = { 'mode' : 'bike' }
         station['city'] = 'Zaragoza'
         station['station_id'] = d['id']
         station['name'] = d['title']
 
-        loc = {}
-        loc['type'] = 'Point'
+        loc = { 'type' : 'Point' }
         loc['coordinates'] = [float(x) for x in d['coordenadas_p'].split(',')]
         station['loc'] = loc
 
@@ -122,13 +119,12 @@ def parse_malaga_bikes(basepath):
             if row[0] == "ID":
                 continue
 
-            station = {}
+            station = { 'mode' : 'bike' }
             station['city'] = 'Malaga'
             station['station_id'] = row[11]     # ID_EXTERNO
             station['name'] = row[3]            # DIRECCION
 
-            loc = {}
-            loc['type'] = 'Point'
+            loc = { 'type' : 'Point' }
             loc['coordinates'] = [ float(row[10]), float(row[9]) ]
             station['loc'] = loc
 
@@ -153,7 +149,6 @@ def do_import(mongo_uri, basepath):
         stations = parser[1](basepath)
         count = 0
         for s in stations:
-            s['mode'] = 'bike'
             res = bikes.update({'loc' : s['loc']}, s, upsert=True)
 
             if res['updatedExisting'] == False:
