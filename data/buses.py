@@ -25,8 +25,7 @@ def parse_madrid_bus(basepath):
 
         coords = [float(c.strip()) for c in p.Point.coordinates.text.split(',')]
 
-        loc = {}
-        loc['type'] = 'Point'
+        loc = { 'type' : 'Point' }
         loc['coordinates'] = coords
         station['loc'] = loc
 
@@ -53,8 +52,7 @@ def parse_bcn_bus(basepath):
         # BCN inserts a trailing 0 coordinate? Why!?
         coords.pop()
 
-        loc = {}
-        loc['type'] = 'Point'
+        loc = { 'type' : 'Point' }
         loc['coordinates'] = coords
         station['loc'] = loc
 
@@ -82,8 +80,7 @@ def parse_valencia_bus(basepath):
 
         coords = [float(c.strip()) for c in p.Point.coordinates.text.split(',')]
 
-        loc = {}
-        loc['type'] = 'Point'
+        loc = { 'type' : 'Point' }
         loc['coordinates'] = coords
         station['loc'] = loc
 
@@ -104,8 +101,7 @@ def parse_bilbao_bus(basepath):
             station['city'] = 'Bilbao'
             station['name'] = row[2]            # stop_name
 
-            loc = {}
-            loc['type'] = 'Point'
+            loc = { 'type' : 'Point' }
             loc['coordinates'] = [ float(row[5]), float(row[4]) ]
             station['loc'] = loc
 
@@ -119,8 +115,7 @@ def parse_malaga_bus(basepath):
     station['city'] = 'Malaga'
     station['name'] = 'Paseo de los Tilos'
 
-    loc = {}
-    loc['type'] = 'Point'
+    loc = { 'type' : 'Point' }
     loc['coordinates'] = [-4.4342172937, 36.7130306843]
     station['loc'] = loc
 
@@ -139,8 +134,7 @@ def parse_london_bus(basepath):
             station['city'] = 'London'
             station['name'] = row[3]            # Stop_Name
 
-            loc = {}
-            loc['type'] = 'Point'
+            loc = { 'type' : 'Point' }
             lng, lat = bng.tolnglat(int(row[4]), int(row[5]))
             loc['coordinates'] = [ lng, lat ]
             station['loc'] = loc
