@@ -6,7 +6,10 @@ umask 002
 
 install_root=`config-get install_root`
 app_name=`config-get app_name`
-app_dir="$install_root/$app_name"
+
+# The REST server is in the 'api' subdirectory of the git repo
+app_repo="$install_root/$app_name"
+app_dir="$app_dir/api"
 app_user=`config-get app_user`
 app_branch=`config-get app_branch`
 app_port=`config-get app_port`
@@ -14,7 +17,7 @@ app_node_env=`config-get app_node_env`
 cron_schedule=`config-get polling_schedule`
 
 update_app() {
-    cd $app_dir
+    cd $app_repo
 
     is_branch=false
 
@@ -79,7 +82,7 @@ install_cronjob() {
 
 #!/usr/bin/env bash
 
-cd \${app_dir}
+cd \${app_repo}
 
 old_commit=\`git rev-parse origin/\${app_branch}\`
 
@@ -92,7 +95,7 @@ if [ \$old_commit != \$new_commit ]; then
     echo "Found new latest commit \${new_commit}"
 
     git checkout origin/\${app_branch}
-    npm update && npm install
+    cd \${app_dir} && npm update && npm install && cd -
     sudo service \${app_name} restart
 else
     echo 'No updates found';
@@ -105,6 +108,7 @@ EOS
 	cat > $update_cron_d_file <<EOF
 app_branch=$app_branch
 app_name=$app_name
+app_repo=$app_repo
 app_dir=$app_dir
 
 $cron_schedule $app_user $update_cron_job_filename
@@ -130,8 +134,8 @@ elif [ -f $update_cron_d_file ]; then
     rm $update_cron_d_file
 fi
 
-npm update && npm install
+cd ${app_dir} && npm update && npm install && cd -
 
-chown -Rf ${app_user}.${app_user} ${app_dir}
+chown -Rf ${app_user}.${app_user} ${app_repo}
 
 service ${app_name} restart
