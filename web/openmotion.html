@@ -1,0 +1,32 @@
+<head>
+  <title>OpenMotion</title>
+</head>
+
+<body>
+  {{> hello}}
+  {{> map}}
+</body>
+
+<template name="hello">
+  <h1>{{greeting}}</h1>
+</template>
+
+<template name="map">
+  <div class="main">
+
+    <div class="nav">
+      {{> search}}
+    </div>
+    <div class="map">
+      <div id="map_canvas"></div>
+    </div>
+  </div>
+</template>
+
+<template name="search">
+  <form id="form">
+    <input type="text" name="location">
+    <input type="submit" id="submit">
+  </form>
+</template>
+

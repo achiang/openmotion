@@ -1,0 +1,27 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "leaflet": {},
+      "less-bootstrap-3": {},
+      "font-awesome-4-less": {}
+    },
+    "packages": {
+      "leaflet": {
+        "git": "https://github.com/bevanhunt/meteor-leaflet.git",
+        "tag": "v0.3.8",
+        "commit": "84caaa2e8aac1c7f7b585a6b64163a1de406add4"
+      },
+      "less-bootstrap-3": {
+        "git": "https://github.com/DerMambo/less-bootstrap-3.git",
+        "tag": "v0.0.1",
+        "commit": "1321ac0ebc809bc354186b96f4c28b7042e38507"
+      },
+      "font-awesome-4-less": {
+        "git": "https://github.com/svub/fontawesome4-less.git",
+        "tag": "v4.4.0",
+        "commit": "250d2336a217c18eb70e9d074784a7db3ca38472"
+      }
+    }
+  }
+}
