@@ -21,6 +21,10 @@ server.listen(config.listen_port, function() {
 server.get(/v1\/(all|bikes|buses|trains|metros)/, function(req, res, next) {
     var lat = parseFloat(req.query.lat);
     var lng = parseFloat(req.query.lng);
+    var distance = req.query.distance;
+    if (isNaN(distance)) {
+        distance = 100;
+    }
     var point = {type: 'Point', coordinates: [lng, lat]};
 
     if (isNaN(lat) || isNaN(lng)) {
@@ -37,7 +41,7 @@ server.get(/v1\/(all|bikes|buses|trains|metros)/, function(req, res, next) {
     async.each(collections
         ,function eachCollection(collection, eachCallback) {
             // http://stackoverflow.com/q/22623998/
-            collection.geoNear(point, { maxDistance: 100/6378137, spherical: true }
+            collection.geoNear(point, { maxDistance: distance/6378137, spherical: true }
             ,function(err, data) {
                 if (err)
                     return eachCallback(err);
