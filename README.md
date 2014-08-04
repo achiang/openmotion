@@ -20,6 +20,7 @@ This app uses juju to help simplify deployment. To use it:
     juju deploy --repository=./charms local:trusty/node-app openmotion
     juju deploy --config charms/precise/mongodb/mongodb.yaml cs:precise/mongodb
     juju add-relation mongodb openmotion
+    juju expose openmotion
 
 Note that the add-relation step may take a long time to import all the data.
 
